@@ -1,0 +1,60 @@
+CSCI 599 Assignment 3 - Settings for your grader
+Source: Assignment3_local_Gemma.pdf, Part 5 (Submit through Brightspace)
+
+Paste the block for YOUR platform into the Comments section of your
+Brightspace submission, with your own values. Submit these only through
+Brightspace: never put them in your repo, README or video.
+
+About the test email and calendar accounts (required):
+- Give the logins of the dedicated, class-only test accounts your agent uses
+  for email and calendar. Never your personal or USC account. If your
+  calendar is in a separate account, the same rules apply to it.
+- Your grader signs in to plant a test meeting (to check your proactive
+  alert) and, if you claim prompt-injection defense, a test email.
+- Path 1 (preferred): 2-Step Verification OFF, password only. Use this if
+  your agent does not use a Google App Password, for example if it uses the
+  Gmail API with OAuth. If your OAuth consent screen is in Testing, the
+  refresh token expires after 7 days: publish the OAuth app to Production,
+  or reauthorize shortly before grading.
+- Path 2: 2-Step Verification ON, password plus backup codes. Use this only
+  if your agent uses a Gmail App Password (IMAP/SMTP), since App Passwords
+  only work while 2-Step Verification is on. If you added Google
+  Authenticator to the account, remove it (Google Account > Security >
+  2-Step Verification > Authenticator). Add at least 4 unused backup codes
+  (Google Account > Security > 2-Step Verification > Backup codes). Graders
+  sign in with the password, then "Try another way" > "Enter one of your
+  8-digit backup codes". Each code works only once. Google may still ask for
+  an extra check on a new device, so Path 1 is safer whenever you can use
+  it.
+- Test it yourself before submitting: sign in to each test account in an
+  Incognito window of a different browser, exactly as a grader would. If you
+  use a backup code for this test, leave that specific code out of your
+  submission; you still need at least 4 unused codes.
+- After submitting, don't generate a new set of backup codes (it invalidates
+  the ones you submitted) and don't change the account password (it also
+  revokes App Passwords and Gmail OAuth tokens).
+- If graders can't sign in to test the email or calendar component, the
+  corresponding points may be deducted. Change these passwords after grading
+  if you keep using the accounts.
+
+===== Hermes students =====
+
+Cloud Run URL:   https://xxxxxx.us-west1.run.app
+API Server Key:  your_api_server_key_here
+Test email account:     test-account@gmail.com
+Test email password:    your_test_email_password
+Test calendar account:  same as test email account (or: test-calendar@gmail.com)
+Test calendar password: same as test email password (or: your_test_calendar_password)
+2-Step Verification:    OFF (Path 1) or ON with backup codes (Path 2)
+Backup codes:           1234 5678, 2345 6789, 3456 7890, 4567 8901  (Path 2 only; at least 4 unused)
+
+===== OpenClaw students =====
+
+Tailscale share link:  https://login.tailscale.com/admin/invite/AbCdEf123...
+Agent URL:             https://a3-cloud-agent.tail1a2b3c.ts.net/
+Test email account:     test-account@gmail.com
+Test email password:    your_test_email_password
+Test calendar account:  same as test email account (or: test-calendar@gmail.com)
+Test calendar password: same as test email password (or: your_test_calendar_password)
+2-Step Verification:    OFF (Path 1) or ON with backup codes (Path 2)
+Backup codes:           1234 5678, 2345 6789, 3456 7890, 4567 8901  (Path 2 only; at least 4 unused)

@@ -1,0 +1,6 @@
+# Source: Assignment3_local_Gemma.pdf, Part 2, step 5: what openclaw.json should contain after openclaw_config.sh (a fragment, not a full file).
+
+"gateway": {
+  "auth": { "allowTailscale": true },
+  "controlUi": { "allowedOrigins": ["https://a3-cloud-agent.tail1a2b3c.ts.net"] }
+}

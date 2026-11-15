@@ -1,0 +1,50 @@
+CSCI 599 Assignment 3 - Commands and messages for the local Gemma video
+Source: Assignment3_local_Gemma.pdf, Part 4. Read Part 4 before recording; this file only collects the text to copy.
+This single video replaces the 5-7 minute demo video in the description (12 minutes at most).
+
+Step 3 - laptop terminal:
+ollama list
+
+Step 4 - Request 1 (local), in your agent's chat:
+What is 12 times 9?
+
+Step 5 - Request 2 (cloud):
+Explain step by step why the sky is blue.
+
+Step 6 - quit Ollama, then show it is off (laptop terminal):
+curl -s -m 3 http://127.0.0.1:11434/api/tags || echo "Ollama is off"
+
+Step 7 - Request 3 (private, Ollama off):
+This is confidential: remind me my locker code is on a sticky note.
+
+Step 8 - start Ollama again, then (laptop terminal):
+ollama list
+
+Step 9 - Request 4 (private, Ollama on again):
+This is confidential: say "back online" in three words.
+
+Step 10 - run your routing log command (routing_log.sh).
+
+Step 11 - laptop terminal:
+ollama ps
+
+Step 12 - messaging app.
+  One messaging service:
+Hi, what can you do?
+
+  Three or more services (one message on each):
+  Service 1: Remember that my fictional project is called Bluebird and is due Friday.
+  Service 2: What is my fictional project called, and when is it due?
+  Service 3: Which app did I tell you about Bluebird on?
+
+Step 13 - morning briefing: show it being DELIVERED (messaging app, or where your
+  README says). Not at the scheduled time? Run the scheduled briefing job now.
+  Don't just ask for a briefing in the chat.
+
+Step 14 - proactive alert: show an alert arriving without you asking (e.g. for the
+  test meeting you created about 35-40 minutes before recording).
+
+Step 15 - end-of-day recap: show it being delivered. It may be simulated: run the
+  scheduled recap job now.
+
+Step 16 - stop recording. Keep the whole video to 12 minutes at most.
