@@ -129,10 +129,12 @@ missing, matched by exact name, so restarts never duplicate them. Prompts are in
 | Job | Schedule | Session | What it does |
 |---|---|---|---|
 | A3 Morning briefing | `30 7 * * *` | isolated | Today's calendar, unread mail needing a reply (flags Prof. White / deadlines), LA weather |
-| A3 Proactive alert | `*/15 * * * *` | isolated | Events starting in 15–30 minutes and urgent new mail; replies `NO_REPLY` (silent) when there is nothing |
+| A3 Proactive alert | `*/30 * * * *` | isolated | Events starting in 30–60 minutes and urgent new mail; replies `NO_REPLY` (silent) when there is nothing |
 | A3 End-of-day recap | `0 18 * * *` | main | What the agent did today in the conversation, mail sent/drafted, tomorrow's first events |
 
-The 15–30 minute window, checked every 15 minutes, means each event is alerted once.
+The 30–60 minute window, checked every 30 minutes, means each event is alerted once. One
+alert run costs about 54k tokens (38k cached) on the cloud model, so every 30 minutes rather
+than every 15 halves the daily cost.
 Scheduled runs only read and draft: the approval gate blocks any send or change from a
 cron-triggered run, without offering approval.
 
@@ -142,7 +144,13 @@ Run a job now (same delivery path as the schedule), from an SSH session on the i
 a3job list
 a3job run briefing      # or: alert, recap
 a3job runs briefing     # recent run history
+a3job remove recap      # delete one job; the next boot (or `a3job ensure`) recreates it
 ```
+
+The recap is a main-session job (a system event in the conversation's own session, woken
+immediately) so it can see what the agent did today; if OpenClaw rejects that, `ensure` falls
+back to an isolated job and logs a warning. Job creation is retried for up to 4 minutes after
+boot, because the agent rejects new jobs until its startup preparation finishes.
 
 ## Local route: operating notes
 

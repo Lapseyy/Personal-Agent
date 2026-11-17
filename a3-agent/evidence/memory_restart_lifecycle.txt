@@ -1,0 +1,157 @@
+TIMESTAMP  EVENT              DETAIL
+04:22:47   start              container starting
+04:22:47   state_fresh        no snapshot restored
+04:30:26   tailscale_up       serve https 443 to gateway
+04:30:54   startup_failed     router plugin install failed
+04:31:07   start              container starting
+04:31:07   state_fresh        no snapshot restored
+04:31:10   tailscale_up       serve https 443 to gateway
+04:33:05   startup_failed     router plugin install failed
+04:33:27   start              container starting
+04:33:28   state_fresh        no snapshot restored
+04:33:30   tailscale_up       serve https 443 to gateway
+04:35:17   startup_failed     router plugin install failed
+04:45:56   start              container starting
+04:45:56   state_fresh        no snapshot restored
+04:45:59   tailscale_up       serve https 443 to gateway
+04:48:53   startup_failed     router plugin install failed
+04:49:45   start              container starting
+04:49:46   state_fresh        no snapshot restored
+04:49:47   tailscale_up       serve https 443 to gateway
+04:55:43   config_applied     router plugin linked and config valid
+04:55:43   gateway_started    pid 332
+05:17:08   shutdown_begin     signal received
+05:17:16   state_snapshot     2026-11-16T05-17-12.017+00-00-openclaw-backup.tar.gz
+05:17:17   shutdown_complete  state flushed
+05:18:26   start              container starting
+05:18:34   state_restored     2026-11-16T05-17-12.017+00-00-openclaw-backup.tar.gz
+05:18:38   tailscale_up       serve https 443 to gateway
+05:22:46   config_applied     router plugin linked and config valid
+05:22:47   gateway_started    pid 352
+05:34:18   shutdown_begin     signal received
+05:34:44   start              container starting
+05:34:50   state_restored     2026-11-16T05-17-12.017+00-00-openclaw-backup.tar.gz
+05:34:53   tailscale_up       serve https 443 to gateway
+05:36:35   config_applied     router plugin linked and config valid
+05:36:36   gateway_started    pid 356
+06:21:24   shutdown_begin     signal received
+06:21:29   state_snapshot     2026-11-16T06-21-26.609+00-00-openclaw-backup.tar.gz
+06:21:29   shutdown_complete  state flushed
+06:23:21   start              container starting
+06:23:27   state_restored     2026-11-16T06-21-26.609+00-00-openclaw-backup.tar.gz
+06:23:28   tailscale_up       serve https 443 to gateway
+06:25:12   config_applied     router plugin linked and config valid
+06:25:12   gateway_started    pid 360
+06:47:01   shutdown_begin     signal received
+06:47:07   state_snapshot     2026-11-16T06-47-04.403+00-00-openclaw-backup.tar.gz
+06:47:07   shutdown_complete  state flushed
+06:47:52   start              container starting
+06:47:59   state_restored     2026-11-16T06-47-04.403+00-00-openclaw-backup.tar.gz
+06:48:02   tailscale_up       serve https 443 to gateway
+06:50:08   config_applied     router plugin linked and config valid
+06:50:09   gateway_started    pid 356
+07:03:32   gateway_exited     exit code 137
+07:03:46   state_snapshot     2026-11-16T07-03-40.212+00-00-openclaw-backup.tar.gz
+07:04:01   start              container starting
+07:04:09   state_restored     2026-11-16T07-03-40.212+00-00-openclaw-backup.tar.gz
+07:04:10   tailscale_up       serve https 443 to gateway
+07:06:25   config_applied     router plugin linked and config valid
+07:06:26   gateway_started    pid 356
+13:50:36   gateway_exited     exit code 137
+13:50:45   state_snapshot     2026-11-16T13-50-40.509+00-00-openclaw-backup.tar.gz
+13:50:56   start              container starting
+13:51:03   state_restored     2026-11-16T13-50-40.509+00-00-openclaw-backup.tar.gz
+13:51:05   tailscale_up       serve https 443 to gateway
+13:52:51   config_applied     router plugin linked and config valid
+13:52:51   gateway_started    pid 358
+13:58:50   gateway_exited     exit code 137
+13:59:27   state_snapshot     2026-11-16T13-59-05.530+00-00-openclaw-backup.tar.gz
+13:59:56   start              container starting
+14:00:06   state_restored     2026-11-16T13-59-05.530+00-00-openclaw-backup.tar.gz
+14:00:08   tailscale_up       serve https 443 to gateway
+14:02:28   config_applied     router plugin linked and config valid
+14:02:28   gateway_started    pid 358
+14:09:08   gateway_exited     exit code 137
+14:09:48   state_snapshot     2026-11-16T14-09-24.623+00-00-openclaw-backup.tar.gz
+14:09:59   start              container starting
+14:10:07   state_restored     2026-11-16T14-09-24.623+00-00-openclaw-backup.tar.gz
+14:10:10   tailscale_up       serve https 443 to gateway
+14:12:06   config_applied     router plugin linked and config valid
+14:12:06   gateway_started    pid 357
+14:19:05   gateway_exited     exit code 137
+14:19:46   state_snapshot     2026-11-16T14-19-23.052+00-00-openclaw-backup.tar.gz
+14:19:57   start              container starting
+14:20:06   state_restored     2026-11-16T14-19-23.052+00-00-openclaw-backup.tar.gz
+14:20:07   tailscale_up       serve https 443 to gateway
+14:21:40   config_applied     router plugin linked and config valid
+14:21:41   gateway_started    pid 362
+18:48:51   shutdown_begin     signal received
+18:48:59   state_snapshot     2026-11-16T18-48-56.525+00-00-openclaw-backup.tar.gz
+18:49:00   shutdown_complete  state flushed
+18:49:56   start              container starting
+18:50:04   state_restored     2026-11-16T18-48-56.525+00-00-openclaw-backup.tar.gz
+18:50:07   tailscale_up       serve https 443 to gateway
+18:51:55   config_applied     router plugin linked and config valid
+18:51:56   gateway_started    pid 356
+19:30:27   shutdown_begin     signal received
+19:30:31   state_snapshot     2026-11-16T19-30-28.952+00-00-openclaw-backup.tar.gz
+19:30:31   shutdown_complete  state flushed
+19:31:35   start              container starting
+19:31:43   state_restored     2026-11-16T19-30-28.952+00-00-openclaw-backup.tar.gz
+19:31:45   tailscale_up       serve https 443 to gateway
+19:33:12   config_applied     router plugin linked and config valid
+19:33:13   gateway_started    pid 361
+20:25:50   shutdown_begin     signal received
+20:25:55   state_snapshot     2026-11-16T20-25-52.530+00-00-openclaw-backup.tar.gz
+20:25:56   shutdown_complete  state flushed
+20:26:55   start              container starting
+20:27:02   state_restored     2026-11-16T20-25-52.530+00-00-openclaw-backup.tar.gz
+20:27:10   tailscale_up       serve https 443 to gateway
+20:27:10   gog_env            account and keyring password present
+20:29:03   config_applied     router plugin linked and config valid
+20:29:03   gateway_started    pid 362
+00:03:24   shutdown_begin     signal received
+00:03:28   state_snapshot     2026-11-17T00-03-26.064+00-00-openclaw-backup.tar.gz
+00:03:29   shutdown_complete  state flushed
+00:04:24   start              container starting
+00:04:32   state_restored     2026-11-17T00-03-26.064+00-00-openclaw-backup.tar.gz
+00:04:34   tailscale_up       serve https 443 to gateway
+00:04:34   gog_env            account and keyring password present
+00:06:33   config_applied     router plugin linked and config valid
+00:06:33   gateway_started    pid 363
+00:43:42   shutdown_begin     signal received
+00:43:47   state_snapshot     2026-11-17T00-43-45.046+00-00-openclaw-backup.tar.gz
+00:43:48   shutdown_complete  state flushed
+00:44:35   start              container starting
+00:44:42   state_restored     2026-11-17T00-43-45.046+00-00-openclaw-backup.tar.gz
+00:44:50   tailscale_up       serve https 443 to gateway
+00:44:51   gog_env            account and keyring password present
+00:46:31   config_applied     router plugin linked and config valid
+00:46:31   gateway_started    pid 363
+01:03:34   shutdown_begin     signal received
+01:03:38   state_snapshot     2026-11-17T01-03-36.366+00-00-openclaw-backup.tar.gz
+01:03:39   shutdown_complete  state flushed
+01:04:44   start              container starting
+01:04:52   state_restored     2026-11-17T01-03-36.366+00-00-openclaw-backup.tar.gz
+01:04:54   tailscale_up       serve https 443 to gateway
+01:04:54   gog_env            account and keyring password present
+01:07:02   config_applied     router plugin linked and config valid
+01:07:02   gateway_started    pid 363
+01:24:46   shutdown_begin     signal received
+01:24:51   state_snapshot     2026-11-17T01-24-48.782+00-00-openclaw-backup.tar.gz
+01:24:51   shutdown_complete  state flushed
+01:25:26   start              container starting
+01:25:33   state_restored     2026-11-17T01-24-48.782+00-00-openclaw-backup.tar.gz
+01:25:35   tailscale_up       serve https 443 to gateway
+01:25:35   gog_env            account and keyring password present
+01:27:31   config_applied     router plugin linked and config valid
+01:27:31   gateway_started    pid 367
+02:03:34   shutdown_begin     signal received
+02:03:40   state_snapshot     2026-11-17T02-03-37.351+00-00-openclaw-backup.tar.gz
+02:03:41   shutdown_complete  state flushed
+02:04:25   start              container starting
+02:04:33   state_restored     2026-11-17T02-03-37.351+00-00-openclaw-backup.tar.gz
+02:04:41   tailscale_up       serve https 443 to gateway
+02:04:41   gog_env            account and keyring password present
+02:06:45   config_applied     router plugin linked and config valid
+02:06:45   gateway_started    pid 364
