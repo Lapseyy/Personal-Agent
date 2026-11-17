@@ -4,8 +4,8 @@ Hybrid-LLM personal assistant on OpenClaw 2026.10.9. This package is the routing
 it decides, per turn, whether local Gemma (`ollama/gemma4:e4b` on the desktop, reached over
 Tailscale) or the cloud model (`openai/gpt-5.6-sol`) answers.
 
-> Work in progress: setup, deployment, grader access, weather source and the remaining
-> sections are added as each part is built.
+Reports: [SECURITY_AUDIT.md](SECURITY_AUDIT.md) · [PERFORMANCE_REPORT.md](PERFORMANCE_REPORT.md) ·
+[PROCESS_LOG.md](PROCESS_LOG.md). Evidence exports: [`evidence/`](evidence/).
 
 ## Pinned versions
 
@@ -16,6 +16,8 @@ Tailscale) or the cloud model (`openai/gpt-5.6-sol`) answers.
 | Ollama              | 0.40.16                                                                    |
 | Local model         | `gemma4:e4b` (digest `dc35e8d9c606…`, Q4_K_M), context 32768, thinking off |
 | Tailscale (desktop) | 1.104.7                                                                    |
+| gogcli              | 0.48.0 (release checksum verified at build)                                |
+| ClawHub skill       | `@lapseyy/meeting-prep` 1.0.0                                              |
 
 ## Routing rules (first match wins)
 
@@ -151,6 +153,53 @@ The recap is a main-session job (a system event in the conversation's own sessio
 immediately) so it can see what the agent did today; if OpenClaw rejects that, `ensure` falls
 back to an isolated job and logs a warning. Job creation is retried for up to 4 minutes after
 boot, because the agent rejects new jobs until its startup preparation finishes.
+
+## Skills
+
+| Skill | Source | Notes |
+|---|---|---|
+| Calendar + email | `gog` (bundled OpenClaw skill + gogcli 0.48.0) | Dedicated test Gmail and its calendar; Gmail + Calendar scopes only; sends gated (above) |
+| Web search | OpenAI hosted `web_search` on the ChatGPT (OAuth) transport | `tools.web.search.openaiCodex.enabled: true` in `config/openclaw.patch.json5`; no API key, no extra plugin |
+| Weather | Bundled OpenClaw `weather` skill (wttr.in, no key) | Used by the morning briefing (Los Angeles) |
+| News | Not a separate skill; answered through web search | — |
+| **Meeting prep** (custom) | [`skills/meeting-prep/SKILL.md`](skills/meeting-prep/SKILL.md), published to ClawHub | Read-only prep brief for the next or a named meeting |
+
+### Advanced integration: custom skill on ClawHub
+
+- Public location: https://clawhub.ai/lapseyy/skills/meeting-prep
+- Pinned version: **1.0.0** (`clawhub skill publish ./skills/meeting-prep --slug meeting-prep --version 1.0.0`)
+- ClawHub security audit: **Pass** (install-time verdict "Safe") https://clawhub.ai/lapseyy/skills/meeting-prep/security-audit?version=1.0.0
+- Fresh-install transcript from the deployed instance: [`evidence/clawhub-install.txt`](evidence/clawhub-install.txt)
+
+Install it yourself:
+
+```sh
+openclaw skills install @lapseyy/meeting-prep --version 1.0.0 --global
+```
+
+`--global` installs into the OpenClaw state directory. On this deployment the workspace is a
+GCS FUSE mount, which cannot rename directories, so a workspace install fails with `EMFILE`
+during the final rename; the state directory is on container disk and is included in the
+snapshots.
+
+## Memory and persistence
+
+OpenClaw's memory (keyword search, `memory.search.provider: "none"`) and transcripts live in
+the state directory, which is snapshotted to the bucket on shutdown and restored on boot.
+Test: "Remember that my fictional project is called Bluebird and is due Friday" (17:50) →
+redeploy (18:03–18:06) → `/new` → "What is my fictional project called…" (18:15) answered
+"Bluebird, Friday November 20". Lifecycle evidence: `evidence/memory_restart_lifecycle.txt`.
+
+Workspace files (`SOUL.md`, `USER.md`, `IDENTITY.md`) live on the bucket at
+`gs://a3-sosapineda-599-state/workspace/` and contain only fictitious data.
+
+## Grader access
+
+Grader credentials (Telegram access or a test chat, and anything else needed) are submitted
+**through Brightspace only**, never in this repository, the README, or the video. The bot
+accepts messages only from allowlisted numeric Telegram user IDs, so access is added by
+appending the grader's ID to `channels.telegram.allowFrom` in
+`config/openclaw.container.patch.json5` and redeploying.
 
 ## Local route: operating notes
 

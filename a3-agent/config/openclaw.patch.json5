@@ -3,6 +3,17 @@
 //         openclaw config patch --file config/openclaw.patch.json5
 //         openclaw config validate
 {
+  tools: {
+    web: {
+      search: {
+        // Web search skill: OpenAI's hosted web_search on the ChatGPT (OAuth) transport.
+        // No API key and no extra plugin. Without this the agent fell back to fetching a
+        // Google News RSS page with web_fetch, which works but is not a search tool.
+        enabled: true,
+        openaiCodex: { enabled: true, mode: "live" },
+      },
+    },
+  },
   memory: {
     search: {
       // Keyword (FTS) recall only. The default provider is OpenAI embeddings, which need a

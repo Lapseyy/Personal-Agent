@@ -1,0 +1,14 @@
+╭─ ClawHub Security Audit ─────────────────────────────────────────────────────────────╮
+│ @lapseyy/meeting-prep@1.0.0                                                          │
+│                                                                                      │
+│ Outcome: Safe                                                                        │
+│                                                                                      │
+│ Overview:                                                                            │
+│ The scanners report no findings in the fully inspected skill, so the verdict is      │
+│ benign with high confidence.                                                         │
+│                                                                                      │
+│ Details: https://clawhub.ai/lapseyy/skills/meeting-prep/security-audit?version=1.0.0 │
+╰──────────────────────────────────────────────────────────────────────────────────────╯
+Downloading meeting-prep@1.0.0 from ClawHub…
+Installing to /home/node/.openclaw/skills/meeting-prep…
+Installed meeting-prep@1.0.0 -> /home/node/.openclaw/skills/meeting-prep
