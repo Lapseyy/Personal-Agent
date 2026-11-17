@@ -1,0 +1,58 @@
+{
+  "id": "a3-router",
+  "name": "A3 Hybrid Router",
+  "activation": {
+    "onStartup": true
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "localProvider": {
+        "type": "string"
+      },
+      "localModel": {
+        "type": "string"
+      },
+      "cloudProvider": {
+        "type": "string"
+      },
+      "cloudModel": {
+        "type": "string"
+      },
+      "ollamaBaseUrl": {
+        "type": "string"
+      },
+      "healthTimeoutMs": {
+        "type": "number"
+      },
+      "healthCacheMs": {
+        "type": "number"
+      },
+      "cloudCooldownMs": {
+        "type": "number"
+      },
+      "longContextChars": {
+        "type": "number"
+      },
+      "simpleMaxChars": {
+        "type": "number"
+      },
+      "rateLimitFlagFile": {
+        "type": "string"
+      },
+      "heldMessage": {
+        "type": "string"
+      },
+      "heldSessionMessage": {
+        "type": "string"
+      },
+      "privateSessionsFile": {
+        "type": "string"
+      },
+      "localCooldownMs": {
+        "type": "number"
+      }
+    }
+  }
+}

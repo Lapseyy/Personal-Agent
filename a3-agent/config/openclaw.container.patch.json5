@@ -1,0 +1,71 @@
+// Container-only overlay, applied after openclaw.patch.json5 at every boot. No secrets:
+// the bot token and gateway token come from env (Secret Manager), never from this file.
+{
+  agents: {
+    defaults: {
+      // Markdown workspace (SOUL.md, USER.md, IDENTITY.md, memory) lives on the bucket mount.
+      workspace: "/mnt/agent-state/workspace",
+    },
+  },
+  models: {
+    providers: {
+      ollama: {
+        // In-container forwarder -> Tailscale SOCKS5 -> desktop Ollama. Never the tailnet IP
+        // directly: userspace Tailscale has no TUN device, so only the SOCKS path works.
+        baseUrl: "http://127.0.0.1:11435",
+      },
+    },
+  },
+  plugins: {
+    // Default-deny. Without this list OpenClaw auto-enables every bundled plugin (browser,
+    // cua-computer, file-transfer, linux-node, ...): capabilities this agent never uses, and
+    // 16 plugins made boot on 1 vCPU take over five minutes. Applied after the router plugin
+    // is installed, so every id here exists. A new plugin-backed feature (for example a web
+    // search provider) must add its plugin id here or it will not load.
+    allow: ["a3-router", "openai", "ollama", "telegram", "memory-core"],
+    entries: {
+      "a3-router": {
+        enabled: true,
+        // Required for before_model_resolve / before_agent_run / agent_end on a
+        // non-bundled plugin.
+        hooks: { allowConversationAccess: true },
+      },
+      telegram: { enabled: true },
+      "memory-core": {
+        // "Dreaming" re-reads session transcripts with the default (cloud) model on a cron
+        // schedule, outside the router. Off, so private history is never sent that way.
+        config: { dreaming: { enabled: false } },
+      },
+    },
+  },
+  approvals: {
+    // The router plugin pauses any mail send or mail/calendar change and asks the human.
+    // "session" posts that request in the chat the turn came from; answer with /approve.
+    plugin: { enabled: true, mode: "session" },
+  },
+  channels: {
+    telegram: {
+      enabled: true,
+      // Token: TELEGRAM_BOT_TOKEN env. Only this numeric user may DM the bot.
+      dmPolicy: "allowlist",
+      allowFrom: ["9144973888"],
+      // Approval prompts (sends, mail/calendar changes) go to this user's DM as buttons.
+      execApprovals: { enabled: true, approvers: ["9144973888"], target: "dm" },
+    },
+  },
+  commands: {
+    // The human operator. Without an owner, approval requests have no approver and are
+    // denied immediately (seen in the v9 logs as approval_requested -> denied in the same second).
+    ownerAllowFrom: ["telegram:9144973888"],
+  },
+  gateway: {
+    mode: "local",
+    port: 18789,
+    // "lan" so Cloud Run's startup probe can reach the port. Token auth is required for any
+    // non-loopback bind, and the instance keeps Cloud Run's invoker IAM check on, so the
+    // public URL rejects anonymous traffic. Graders come in through `tailscale serve`.
+    bind: "lan",
+    auth: { allowTailscale: true },
+    controlUi: { allowedOrigins: ["https://a3-agent.tail03df8a.ts.net"] },
+  },
+}

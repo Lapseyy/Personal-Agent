@@ -1,0 +1,48 @@
+// OpenClaw 2026.10.9 config patch for the A3 hybrid agent. No secrets in this file.
+// Apply:  openclaw config patch --file config/openclaw.patch.json5 --dry-run
+//         openclaw config patch --file config/openclaw.patch.json5
+//         openclaw config validate
+{
+  memory: {
+    search: {
+      // Keyword (FTS) recall only. The default provider is OpenAI embeddings, which need a
+      // Platform API key this deployment does not have, so memory_search reported
+      // "unavailable". Keyword search runs inside the instance: no cloud call, no dependency
+      // on the desktop, and memory text never leaves the container.
+      provider: "none",
+    },
+  },
+  agents: {
+    defaults: {
+      // USC ChatGPT Edu rejects the default reasoning level for gpt-5.6-sol (403
+      // reasoning_effort_not_allowed); "low" is accepted.
+      thinkingDefault: "low",
+      // Short internal tasks (titles, progress text) otherwise go to a second cloud model
+      // (gpt-5.6-luna) that the router never sees. Keep them on the local model.
+      utilityModel: "ollama/gemma4:e4b",
+      model: {
+        primary: "openai/gpt-5.6-sol",
+        // Must stay empty: the router decides fallback itself. A configured cloud fallback
+        // could pick up a failed local call on a private task (see README, HELD policy).
+        fallbacks: [],
+      },
+      // This map is also the model allowlist, so both routed models are listed.
+      models: {
+        "openai/gpt-5.6-sol": {
+          // Run cloud turns on OpenClaw's own embedded runtime, not the native Codex
+          // app-server harness. The Codex harness failed auth here (401 against the Platform
+          // endpoint), and the router's plugin hooks run on the embedded runtime.
+          agentRuntime: { id: "openclaw" },
+          params: { thinking: "low" },
+        },
+        "ollama/gemma4:e4b": {
+          params: {
+            num_ctx: 32768, // matches OLLAMA_CONTEXT_LENGTH on the desktop
+            think: false, // thinking off for short local tasks
+            keep_alive: -1, // keep the model loaded
+          },
+        },
+      },
+    },
+  },
+}

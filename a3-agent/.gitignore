@@ -1,0 +1,10 @@
+node_modules/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+# OAuth client files, keys and anything secret stay outside the repo (C:\Users\edmar\a3-secrets).
+client_secret*.json
+*.pem
+*.key

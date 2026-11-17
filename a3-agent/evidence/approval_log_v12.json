@@ -1,0 +1,1452 @@
+[
+  {
+    "insertId": "6afb71b20001563e5e0dd7e6",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T21:12:18.087Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T21:12:18.423867006Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-16T21:12:18.087614Z"
+  },
+  {
+    "insertId": "6afb71b4000bef52e4562a10",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T21:12:20.781Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T21:12:21.093740374Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-16T21:12:20.782162Z"
+  },
+  {
+    "insertId": "6afb71b6000cb2a11fb32f2b",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T21:12:22.831Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T21:12:23.088242089Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-16T21:12:22.832161Z"
+  },
+  {
+    "insertId": "6afb71b9000043cada45e32b",
+    "jsonPayload": {
+      "action": "unparsed gog command",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T21:12:25.016Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T21:12:25.087394401Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-16T21:12:25.017354Z"
+  },
+  {
+    "insertId": "6afb71be0001d52a9b5d21ab",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T21:12:30.119Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T21:12:30.414119032Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-16T21:12:30.120106Z"
+  },
+  {
+    "insertId": "6afb938500017a57a8d2a0ac",
+    "jsonPayload": {
+      "action": "calendar calendars",
+      "component": "a3-approval",
+      "decision": "allowed",
+      "event": "gog_exec",
+      "ts": "2026-11-16T23:36:37.096Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T23:36:37.104871828Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-16T23:36:37.096855Z"
+  },
+  {
+    "insertId": "6afb96e2000380440a3ace7d",
+    "jsonPayload": {
+      "action": "calendar calendars",
+      "component": "a3-approval",
+      "decision": "allowed",
+      "event": "gog_exec",
+      "ts": "2026-11-16T23:50:58.228Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T23:50:58.239162205Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-16T23:50:58.229444Z"
+  },
+  {
+    "insertId": "6afb97560000eeab141b1e22",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T23:52:54.060Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T23:52:54.337406328Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-16T23:52:54.061099Z"
+  },
+  {
+    "insertId": "6afb97560000eeb1e4908280",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T23:52:54.060Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T23:52:54.337406328Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-16T23:52:54.061105Z"
+  },
+  {
+    "insertId": "6afb9756000384bc7d69bdfb",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T23:52:54.230Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T23:52:54.337406328Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-16T23:52:54.230588Z"
+  },
+  {
+    "insertId": "6afb975d000ce2e42beff0fe",
+    "jsonPayload": {
+      "action": "unparsed gog command",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T23:53:01.843Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T23:53:01.999927010Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-16T23:53:01.844516Z"
+  },
+  {
+    "insertId": "6afb9763000db86cfe239125",
+    "jsonPayload": {
+      "action": "unparsed gog command",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T23:53:07.898Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T23:53:07.994217113Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-16T23:53:07.899180Z"
+  },
+  {
+    "insertId": "6afb97690007d7ebc72a7556",
+    "jsonPayload": {
+      "action": "unparsed gog command",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-16T23:53:13.507Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdc66ad5593ea02f9259aebf42fdd3c2a22d3165afdb2304992869717620b28a57ec48c9a8052da467e73388668e1926b7eefd1fcce31e81a09be971112ec9388741cb3f9a2575afbefed603fb45cd940ab4e62f2931"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-16T23:53:13.653226997Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-16T23:53:13.514027Z"
+  },
+  {
+    "insertId": "6afb9f11000934c496cff5a5",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:25:53.602Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:25:53.824822320Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:25:53.603332Z"
+  },
+  {
+    "insertId": "6afb9f11000934c89ddbc1bc",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:25:53.603Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:25:53.824822320Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:25:53.603336Z"
+  },
+  {
+    "insertId": "6afb9f11000bd2813a4520e0",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:25:53.774Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:25:53.824822320Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:25:53.774785Z"
+  },
+  {
+    "insertId": "6afb9f17000144c311f1d606",
+    "jsonPayload": {
+      "action": "const ? x i.test x.name if throw return",
+      "component": "a3-approval",
+      "decision": "passed_unparsed",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:25:59.082Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:25:59.151978566Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:25:59.083139Z"
+  },
+  {
+    "insertId": "6afb9f170002a2aca4c9aa1f",
+    "jsonPayload": {
+      "action": "calendar events",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:25:59.172Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:25:59.491591511Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:25:59.172716Z"
+  },
+  {
+    "insertId": "6afb9f17000c527c1abf47b4",
+    "jsonPayload": {
+      "action": "calendar events",
+      "component": "a3-approval",
+      "decision": "allowed",
+      "event": "gog_exec",
+      "ts": "2026-11-17T00:25:59.806Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:25:59.826496980Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:25:59.807548Z"
+  },
+  {
+    "insertId": "6afba1420009c87b3b7e96e8",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "approval_requested",
+      "event": "gate",
+      "recipients_count": 1,
+      "ts": "2026-11-17T00:35:14.640Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:35:14.654474147Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:35:14.641147Z"
+  },
+  {
+    "insertId": "6afba1420009ce62141027b9",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "denied",
+      "event": "gate",
+      "recipients_count": 1,
+      "ts": "2026-11-17T00:35:14.641Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:35:14.654474147Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T00:35:14.642658Z"
+  },
+  {
+    "insertId": "6afba144000ec6032323fc09",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "approval_requested",
+      "event": "gate",
+      "recipients_count": 1,
+      "ts": "2026-11-17T00:35:16.967Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:35:16.984940991Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:35:16.968195Z"
+  },
+  {
+    "insertId": "6afba144000ec6f2b1ff0ba2",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "denied",
+      "event": "gate",
+      "recipients_count": 1,
+      "ts": "2026-11-17T00:35:16.967Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:35:16.984940991Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T00:35:16.968434Z"
+  },
+  {
+    "insertId": "6afba14600083c437a3a088c",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "approval_requested",
+      "event": "gate",
+      "recipients_count": 1,
+      "ts": "2026-11-17T00:35:18.538Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:35:18.646759202Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:35:18.539715Z"
+  },
+  {
+    "insertId": "6afba14600083d177628f3f9",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "denied",
+      "event": "gate",
+      "recipients_count": 1,
+      "ts": "2026-11-17T00:35:18.539Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd68e25371e088ca1740cb6e6c4860f33f54a205458a68e97e354d8bb576934415a512e2f36ec173276d7dd22266313b252279210ebed63a5e9b40f09c82322f281c48bf31dfbe80ef0c9cbbef22ec9a916db749a09474"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:35:18.646759202Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T00:35:18.539927Z"
+  },
+  {
+    "insertId": "6afba54b000a61ce70f37813",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:52:27.680Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdaf57c6937d00574732d0d047bd309eca7af7f401fd50c257522f3b70b1bf8d80c453fb4ddedd5fb52083c41e88ca7dc385b9de59ae02fe5e350ac9d7192800bb521aaf76578fcce96ff08609265de3d37af0d090c8ddb6cd"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:52:28.010649637Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:52:27.680398Z"
+  },
+  {
+    "insertId": "6afba54b000a61d099508c61",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:52:27.680Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdaf57c6937d00574732d0d047bd309eca7af7f401fd50c257522f3b70b1bf8d80c453fb4ddedd5fb52083c41e88ca7dc385b9de59ae02fe5e350ac9d7192800bb521aaf76578fcce96ff08609265de3d37af0d090c8ddb6cd"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:52:28.010649637Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:52:27.680400Z"
+  },
+  {
+    "insertId": "6afba54c0006c37d4ea8a634",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:52:28.443Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdaf57c6937d00574732d0d047bd309eca7af7f401fd50c257522f3b70b1bf8d80c453fb4ddedd5fb52083c41e88ca7dc385b9de59ae02fe5e350ac9d7192800bb521aaf76578fcce96ff08609265de3d37af0d090c8ddb6cd"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:52:28.677261559Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T00:52:28.443261Z"
+  },
+  {
+    "insertId": "6afba552000bd7adce829800",
+    "jsonPayload": {
+      "action": "unparsed gog command",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:52:34.776Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdaf57c6937d00574732d0d047bd309eca7af7f401fd50c257522f3b70b1bf8d80c453fb4ddedd5fb52083c41e88ca7dc385b9de59ae02fe5e350ac9d7192800bb521aaf76578fcce96ff08609265de3d37af0d090c8ddb6cd"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:52:35.013344377Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T00:52:34.776109Z"
+  },
+  {
+    "insertId": "6afba558000246d0b585dc44",
+    "jsonPayload": {
+      "action": "unparsed gog command",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:52:40.149Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdaf57c6937d00574732d0d047bd309eca7af7f401fd50c257522f3b70b1bf8d80c453fb4ddedd5fb52083c41e88ca7dc385b9de59ae02fe5e350ac9d7192800bb521aaf76578fcce96ff08609265de3d37af0d090c8ddb6cd"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:52:40.325347716Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T00:52:40.149200Z"
+  },
+  {
+    "insertId": "6afba55a000908bf6bfe067f",
+    "jsonPayload": {
+      "action": "unparsed gog command",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:52:42.592Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdaf57c6937d00574732d0d047bd309eca7af7f401fd50c257522f3b70b1bf8d80c453fb4ddedd5fb52083c41e88ca7dc385b9de59ae02fe5e350ac9d7192800bb521aaf76578fcce96ff08609265de3d37af0d090c8ddb6cd"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:52:42.663211609Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T00:52:42.592063Z"
+  },
+  {
+    "insertId": "6afba55f0001e1148e845dd8",
+    "jsonPayload": {
+      "action": "unparsed gog command",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:52:47.123Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdaf57c6937d00574732d0d047bd309eca7af7f401fd50c257522f3b70b1bf8d80c453fb4ddedd5fb52083c41e88ca7dc385b9de59ae02fe5e350ac9d7192800bb521aaf76578fcce96ff08609265de3d37af0d090c8ddb6cd"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:52:47.328493161Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T00:52:47.123156Z"
+  },
+  {
+    "insertId": "6afba5990006c381843f92f0",
+    "jsonPayload": {
+      "action": "unparsed gog command",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:53:45.443Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdaf57c6937d00574732d0d047bd309eca7af7f401fd50c257522f3b70b1bf8d80c453fb4ddedd5fb52083c41e88ca7dc385b9de59ae02fe5e350ac9d7192800bb521aaf76578fcce96ff08609265de3d37af0d090c8ddb6cd"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:53:45.674154085Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T00:53:45.443265Z"
+  },
+  {
+    "insertId": "6afba5cf000bef503b85e5e3",
+    "jsonPayload": {
+      "action": "unparsed gog command",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T00:54:39.782Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdaf57c6937d00574732d0d047bd309eca7af7f401fd50c257522f3b70b1bf8d80c453fb4ddedd5fb52083c41e88ca7dc385b9de59ae02fe5e350ac9d7192800bb521aaf76578fcce96ff08609265de3d37af0d090c8ddb6cd"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T00:54:39.821422130Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T00:54:39.782160Z"
+  },
+  {
+    "insertId": "6afbaaf1000ca7f62b9bcca8",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:16:33.829Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:16:33.895371791Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:16:33.829430Z"
+  },
+  {
+    "insertId": "6afbaaf1000ca7fea6b35150",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:16:33.829Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:16:33.895371791Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:16:33.829438Z"
+  },
+  {
+    "insertId": "6afbaaf20000083d8f378111",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:16:34.001Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:16:34.228769831Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:16:34.002109Z"
+  },
+  {
+    "insertId": "6afbaaf6000be3d5c5d0f7a7",
+    "jsonPayload": {
+      "action": "gmail drafts create",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:16:38.778Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:16:38.891683298Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:16:38.779221Z"
+  },
+  {
+    "insertId": "6afbaaf6000be3e604a1d28c",
+    "jsonPayload": {
+      "action": "gmail drafts create",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:16:38.778Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:16:38.891683298Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:16:38.779238Z"
+  },
+  {
+    "insertId": "6afbaaf6000cc98c679fbd0f",
+    "jsonPayload": {
+      "action": "gmail drafts create",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:16:38.837Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:16:38.891683298Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:16:38.838028Z"
+  },
+  {
+    "insertId": "6afbaaf700061b8c790a65bc",
+    "jsonPayload": {
+      "action": "gmail drafts create",
+      "component": "a3-approval",
+      "decision": "allowed",
+      "event": "gog_exec",
+      "ts": "2026-11-17T01:16:39.399Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:16:39.556955674Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:16:39.400268Z"
+  },
+  {
+    "insertId": "6afbab2a00093101d2a3e0a8",
+    "jsonPayload": {
+      "action": "multiple actions",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:17:30.601Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:17:30.893743187Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T01:17:30.602369Z"
+  },
+  {
+    "insertId": "6afbab3200016d13c8f7911b",
+    "jsonPayload": {
+      "action": "multiple actions",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:17:38.092Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:17:38.217725673Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T01:17:38.093459Z"
+  },
+  {
+    "insertId": "6afbab3b000737ea5f244b99",
+    "jsonPayload": {
+      "action": "multiple actions",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:17:47.472Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:17:47.544398364Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T01:17:47.473066Z"
+  },
+  {
+    "insertId": "6afbab64000b7796a4e2b5dc",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "blocked",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:18:28.750Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bde4c7a19bba074fc7215c02836ebde184f30ff6bf836d91d455a644ed5f8962eb226f59f99b4bcd81574386dec946d4343a7c4cff5cf238f42949d4e1a2e0ded93772926bd16e3f7f6da055839de41aeac377c2aa38"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:18:28.932795870Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-17T01:18:28.751510Z"
+  },
+  {
+    "insertId": "6afbaefe0004350359a322f8",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:33:50.275Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:33:50.558095739Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:33:50.275715Z"
+  },
+  {
+    "insertId": "6afbaefe00043508f65f1589",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:33:50.275Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:33:50.558095739Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:33:50.275720Z"
+  },
+  {
+    "insertId": "6afbaf010000f2283f5994b1",
+    "jsonPayload": {
+      "action": "gog",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:33:53.062Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:33:53.222834109Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:33:53.061992Z"
+  },
+  {
+    "insertId": "6afbaf0600084f66637065ed",
+    "jsonPayload": {
+      "action": "gmail drafts create",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:33:58.544Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:33:58.885289793Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:33:58.544614Z"
+  },
+  {
+    "insertId": "6afbaf0600084f7144dbae9b",
+    "jsonPayload": {
+      "action": "gmail drafts create",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:33:58.544Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:33:58.885289793Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:33:58.544625Z"
+  },
+  {
+    "insertId": "6afbaf0600093df0ba579001",
+    "jsonPayload": {
+      "action": "gmail drafts create",
+      "component": "a3-approval",
+      "decision": "allowed_read",
+      "event": "gate",
+      "recipients_count": 0,
+      "ts": "2026-11-17T01:33:58.605Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:33:58.885289793Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:33:58.605680Z"
+  },
+  {
+    "insertId": "6afbaf080008a323392d482e",
+    "jsonPayload": {
+      "action": "gmail drafts create",
+      "component": "a3-approval",
+      "decision": "allowed",
+      "event": "gog_exec",
+      "ts": "2026-11-17T01:34:00.565Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:34:00.882912155Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:34:00.566051Z"
+  },
+  {
+    "insertId": "6afbaf21000976a8d49fdb7c",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "approval_requested",
+      "event": "gate",
+      "recipients_count": 1,
+      "ts": "2026-11-17T01:34:25.619Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:34:25.857190340Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:34:25.620200Z"
+  },
+  {
+    "insertId": "6afbaf320002ec3f4a959c83",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "approved",
+      "event": "gate",
+      "recipients_count": 1,
+      "ts": "2026-11-17T01:34:42.191Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:34:42.507866962Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:34:42.191551Z"
+  },
+  {
+    "insertId": "6afbaf320003b70c34aab973",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "allowed_approved",
+      "event": "gate",
+      "recipients_count": 1,
+      "ts": "2026-11-17T01:34:42.243Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:34:42.507866962Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:34:42.243468Z"
+  },
+  {
+    "insertId": "6afbaf320005bf38542c9a65",
+    "jsonPayload": {
+      "action": "gmail send",
+      "component": "a3-approval",
+      "decision": "approved",
+      "event": "gog_exec",
+      "ts": "2026-11-17T01:34:42.376Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd66716cf5889e4d8749dd866d4c4f57ca701810ad2358cc18becc6ce77142ee1032fdbb9c0e5a40551c39c57f41d6b77d6dff6f94dfff9468b4ea2e339499b1377066f1adb1f450632d3c6f098740fd367b7b67c57eef"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T01:34:42.507866962Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T01:34:42.376632Z"
+  }
+]

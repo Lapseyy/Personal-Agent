@@ -1,0 +1,12 @@
+// Desktop-only: enable the router plugin for local testing. Apply after
+//   openclaw plugins install --link C:\NLP_3\a3-agent --force
+{
+  plugins: {
+    entries: {
+      "a3-router": {
+        enabled: true,
+        hooks: { allowConversationAccess: true },
+      },
+    },
+  },
+}
