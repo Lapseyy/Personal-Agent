@@ -1,0 +1,43 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Secrets and local environment (only .env.example is committed)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*client_secret*.json
+token*.json
+CloudRunSettings.filled.txt
+
+# Agent / tool state that can hold tokens
+.openclaw/
+.tailscale/
+tailscaled.state
+*.state
+
+# Python (helper scripts only, if ever used)
+.venv/
+venv/
+__pycache__/
+
+# Logs, evidence exports and scratch
+*.log
+logs/
+evidence-raw/
+_to_delete/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Course reference material (not part of the submission)
+/*.pdf
+/Assignment3_local_Gemma_scripts/

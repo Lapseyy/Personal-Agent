@@ -1,2 +1,0 @@
-# Source: Assignment3_local_Gemma.pdf, Part 2, step 5: /var/run/tailscale must be writable by the container user.
-RUN mkdir -p /var/run/tailscale && chown node:node /var/run/tailscale
