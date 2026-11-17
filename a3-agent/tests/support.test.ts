@@ -59,6 +59,43 @@ describe("local health probe", () => {
     expect(sent).toBeGreaterThan(2_600); // two 1,280-byte tailnet packets
   });
 
+  it("regression: retries once after a network failure, never more, never for a missing model", async () => {
+    let calls = 0;
+    const flaky = (() => {
+      calls++;
+      return calls === 1
+        ? Promise.reject(new Error("first request after idle timed out"))
+        : Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve({ models: [{ name: "gemma4:e4b" }] }),
+          });
+    }) as unknown as typeof fetch;
+    expect(
+      await createLocalHealthProbe({ ...base, cacheMs: 0, now: () => 0, fetchFn: flaky })(),
+    ).toBe(true);
+    expect(calls).toBe(2);
+
+    calls = 0;
+    const down = (() => {
+      calls++;
+      return Promise.reject(new Error("refused"));
+    }) as unknown as typeof fetch;
+    expect(
+      await createLocalHealthProbe({ ...base, cacheMs: 0, now: () => 0, fetchFn: down })(),
+    ).toBe(false);
+    expect(calls).toBe(2);
+
+    calls = 0;
+    const noModel = (() => {
+      calls++;
+      return Promise.resolve({ ok: true, json: () => Promise.resolve({ models: [] }) });
+    }) as unknown as typeof fetch;
+    expect(
+      await createLocalHealthProbe({ ...base, cacheMs: 0, now: () => 0, fetchFn: noModel })(),
+    ).toBe(false);
+    expect(calls).toBe(1);
+  });
+
   it("caches within the window", async () => {
     let calls = 0;
     let now = 0;

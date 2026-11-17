@@ -88,6 +88,15 @@ would have held private ones. Sleep and hibernate are now disabled for the run w
 before runner start" (OpenClaw's fixed 60 s pre-model watchdog) while operator CLI commands
 were running over SSH on the same 2 vCPUs. Runs without concurrent CLI activity succeeded.
 
+**Idle-link health probes.** On the evening of Nov 16, background turns at 20:50, 21:20 and
+21:26 in a private session were held with `local_unavailable` (probe latency ≈ 4.3 s, i.e. the
+3 s probe timed out) while Ollama was loaded and Tailscale was connected. The first request
+after ~30 idle minutes over the relay was slower than the probe timeout. Fix (v17): one
+immediate second probe on a network failure, never on "model not listed"; at most two short
+probes, no loop. A side effect worth noting: a held background turn posts the hold message
+into the chat, which looks like a failed send to the user; starting a new session (`/new`)
+ends the private session and stops it.
+
 **Restarts and state.** Planned restarts (deploys) log `shutdown_begin` → `state_snapshot`
 → `state_restored` → `gateway_started`. Once (05:34 UTC Nov 16) the container was stopped
 before the shutdown snapshot finished, so the next boot restored the previous snapshot; for

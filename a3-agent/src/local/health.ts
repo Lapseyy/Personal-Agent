@@ -26,10 +26,7 @@ export function createLocalHealthProbe(opts: LocalHealthOptions): () => Promise<
   const fetchFn = opts.fetchFn ?? fetch;
   let cached: { at: number; ok: boolean } | undefined;
 
-  return async () => {
-    const now = opts.now();
-    if (cached !== undefined && now - cached.at < opts.cacheMs) return cached.ok;
-    let ok = false;
+  const attempt = async (): Promise<boolean | "retry"> => {
     try {
       const res = await fetchFn(new URL("/api/tags", opts.baseUrl), {
         // Padded so the request needs more than one full-size network packet. Found in
@@ -38,13 +35,24 @@ export function createLocalHealthProbe(opts: LocalHealthOptions): () => Promise<
         headers: { "x-a3-probe-pad": PROBE_PAD },
         signal: AbortSignal.timeout(opts.timeoutMs),
       });
-      if (res.ok) {
-        const body = (await res.json()) as TagsResponse;
-        ok = (body.models ?? []).some((m) => m.name === opts.model);
-      }
+      if (!res.ok) return "retry";
+      const body = (await res.json()) as TagsResponse;
+      return (body.models ?? []).some((m) => m.name === opts.model);
     } catch {
-      ok = false;
+      return "retry";
     }
+  };
+
+  return async () => {
+    const now = opts.now();
+    if (cached !== undefined && now - cached.at < opts.cacheMs) return cached.ok;
+    // One immediate second attempt on a network failure or timeout (never on "model not
+    // listed"). Seen live: after ~30 idle minutes the first request over the tailnet relay
+    // took longer than the timeout while the desktop was healthy, so background turns in a
+    // private session were held. Bounded: at most two short probes, no loop.
+    let result = await attempt();
+    if (result === "retry") result = await attempt();
+    const ok = result === true;
     cached = { at: opts.now(), ok };
     return ok;
   };
