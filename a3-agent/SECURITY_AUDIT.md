@@ -82,6 +82,12 @@ Live evidence already recorded:
 
 - An approved send ran exactly once after **Allow once** (v12, 2026-11-17 01:34 UTC: `approval_requested` → `approved` → `gog_exec allowed gmail send`).
 - A send to `someone@example.com` was refused by the allowlist without a prompt (01:18 UTC, `blocked gmail send`).
+- A scheduled run (the end-of-day recap, 2026-11-17 02:57 UTC) issued a `gog gmail drafts`
+  command that the policy treats as a change; it was blocked as `blocked_scheduled`, with no
+  approval prompt. Scheduled jobs could not change anything even when the model tried.
+- Over the run window the gate allowed 511 reads/drafts, requested approval 4 times, recorded
+  1 human approval (which ran exactly one send), and blocked 14 actions
+  (`evidence/approval_log.json`).
 - During testing the model once mistyped the test address as `wramonkeyhehe@gmail.com`; the allowlist would have refused it. The allowlist also protects against the model's own mistakes, not only attackers.
 
 ## 5. Container isolation evidence

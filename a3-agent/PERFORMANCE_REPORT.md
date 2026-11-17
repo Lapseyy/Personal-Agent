@@ -6,21 +6,24 @@ Local model `ollama/gemma4:e4b` on an RTX 5080 (16 GB), context 32768, **thinkin
 reached over Tailscale.
 
 Data sources: the routing log (one JSON line per decision, no message text), OpenClaw's
-automation run history (`a3job runs <job>`), and the lifecycle log. The routing-log sample
-below covers 2026-11-16 06:04 → 2026-11-17 01:34 UTC (71 decisions,
-`evidence/routing_log_v12.json`). Times in the tables are wall-clock for the whole agent turn,
-from model selection to the end of the run, including tool calls.
+automation run history (`a3job runs <job>`), and the lifecycle log. The full export covers
+2026-11-16 06:04 → 2026-11-17 22:30 UTC: **179 routing decisions** (116 cloud, 57 local,
+6 held), in `evidence/routing_log.json`. Times are wall-clock for the whole agent turn, from
+model selection to the end of the run, including tool calls.
 
 ## 1. Latency by task type
 
-| Task type → route (rule) | n | p50 | min | max | Notes |
-|---|---|---|---|---|---|
-| simple → **local** (`simple_local`), success | 8 | 7.8 s | 1.2 s | 15.3 s | Arithmetic, short chat, memory recall ("Bluebird") |
-| simple → local, failed | 4 | — | 7.1 s | 300.7 s | Three were 300 s timeouts during the Tailscale black hole (section 4) |
-| tool use → **cloud** (`tools_cloud`) | 10 | 5.5 s | 2.8 s | 40.8 s | Calendar reads, drafts, sends |
-| short follow-up → cloud (`tools_session_cloud`) | 5 | 11.7 s | 5.5 s | 24.5 s | "yes" after a tool turn |
-| reasoning → **cloud** (`reasoning_cloud`) | 3 | 12.5 s | 1.7 s | 14.6 s | "Explain step by step…" |
-| simple → cloud (`default_cloud`) | 39 | 4.6 s | 3.5 s | 38.6 s | Mostly background heartbeat turns while local was unavailable or cooling down |
+| Task type → route (rule) | n | p50 | p90 | min | max | Notes |
+|---|---|---|---|---|---|---|
+| simple → **local** (`simple_local`), success | 11 | 7.8 s | 12.5 s | 1.2 s | 15.3 s | Arithmetic, short chat, memory recall ("Bluebird") |
+| simple → local, failed | 6 | — | — | 3.4 s | 300.7 s | All before the v17 fix: two 300 s timeouts in the Tailscale black hole (section 4), plus stream/incomplete errors on a cold or recovering link |
+| background turn in a private session → **local** (`private_session_local`) | 38 | 1.8 s | 2.9 s | 1.3 s | 3.5 s | Heartbeat checks every 30 min, overnight Nov 17 |
+| private → **local** (`privacy_local`) | 1 | 5.7 s | — | — | — | "This is confidential: say 'back online'…" |
+| private → **held** (`privacy_held`, `private_session_held`) | 6 | 0.1–4.4 s | — | — | — | Local offline (Ollama quit on purpose), or idle-link probe timeouts before v17 |
+| tool use → **cloud** (`tools_cloud`) | 15 | 14.5 s | 40.8 s | 2.8 s | 93.2 s | Calendar reads, drafts, sends, web search |
+| short follow-up → cloud (`tools_session_cloud`) | 8 | 11.7 s | 24.5 s | 3.4 s | 24.5 s | "yes" after a tool turn |
+| reasoning → **cloud** (`reasoning_cloud`) | 50 | 18.6 s | 47.9 s | 1.7 s | 190.9 s | "Explain step by step…", and the alert job (its prompt matches reasoning keywords first) |
+| simple → cloud (`default_cloud`) | 41 | 4.6 s | 11.1 s | 3.5 s | 38.6 s | Mostly background turns while local was down or cooling down on Nov 16 |
 
 Full tool-using scheduled turns (automation run history, cloud route):
 
@@ -57,8 +60,8 @@ Takeaways:
 | Cloud Run Instance | Always-on 2 vCPU / 4 GiB in us-west1 | See the project's Billing report for the run window; size chosen from the measurements in section 4, not guessed |
 | GCS bucket, Secret Manager, Logging | Small (a few MB of snapshots and logs) | — |
 
-Routing directly saves cloud usage: in the sample, 8 of 71 decisions were answered locally
-at zero marginal cost, and every privacy-sensitive turn stays local by policy.
+Routing directly saves cloud usage: 57 of 179 decisions (32%) were answered locally at zero
+marginal cost, and every privacy-sensitive turn stays local or is held by policy.
 
 ## 4. Sizing and reliability measurements
 
@@ -93,7 +96,8 @@ were running over SSH on the same 2 vCPUs. Runs without concurrent CLI activity 
 3 s probe timed out) while Ollama was loaded and Tailscale was connected. The first request
 after ~30 idle minutes over the relay was slower than the probe timeout. Fix (v17): one
 immediate second probe on a network failure, never on "model not listed"; at most two short
-probes, no loop. A side effect worth noting: a held background turn posts the hold message
+probes, no loop. Result: after the v17 deploy, 66 decisions overnight (Nov 17 06:30–22:30
+UTC), 0 held, 0 failed; the 32 local ones had p50 1.7 s, max 3.5 s. A side effect worth noting: a held background turn posts the hold message
 into the chat, which looks like a failed send to the user; starting a new session (`/new`)
 ends the private session and stops it.
 
@@ -106,7 +110,7 @@ across a restart (fact saved 17:50, instance restarted 18:03–18:06, recalled 1
 ## 5. Routing correctness
 
 The router is a pure function with ordered rules (`src/router/decide.ts`), covered by unit
-tests for every rule including the HELD path. Live, every decision in the sample matches its
+tests for every rule including the HELD path. Live, every one of the 179 decisions matches its
 rule: privacy-sensitive turns are local or held, tool turns are cloud, short non-tool turns
 are local when the local model is healthy. The video shows the four required requests
 (local → cloud → held → local) with the routing log on screen.
@@ -120,7 +124,9 @@ gcloud logging read 'jsonPayload.component="a3-router"' --project=a3-sosapineda-
 ## 6. Limits of this report
 
 - The sample is one day of real use by one person, not a benchmark.
-- The 48-hour run window was shortened to fit the deadline; lifecycle and routing logs are
-  exported at the end of the window and committed to `evidence/`.
+- The run window was about 40 hours (Nov 16 ~04:30 → Nov 17 ~22:30 UTC), shortened to fit
+  the deadline. Lifecycle (26 starts: 21 restored from snapshot, 4 failed boots on 1 vCPU,
+  5 OOM restarts at 2 GiB, the rest planned deploys), routing and approval logs are exported
+  in `evidence/`.
 - Latencies include OpenClaw's own overhead (system prompt ~21k tokens, tool scaffolding),
   which dominates for short local turns.
