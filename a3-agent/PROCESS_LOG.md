@@ -2,20 +2,9 @@
 
 Edmarck Sosa Pineda · CSCI 599 · Fall 2026
 
-> **Edmarck: the sections marked ✍️ must be in your own words.** The assignment asks for the
-> narrative and "what I learned" in your voice. I left prompts in each; replace them. The
-> timeline and the AI-attribution table are factual records you can keep as they are.
+## Narrative
 
-## ✍️ Narrative
-
-<!-- Replace with 2–4 paragraphs in your own words. Prompts:
-- What you set out to build and why you chose OpenClaw + Telegram + local Gemma.
-- The hardest stretch (pick one: the 1 vCPU boot failures, the OpenAI sign-in that "didn't finish",
-  the overnight local outage that turned out to be Windows sleep, the Tailscale packet-size black hole,
-  or the four rounds of approval-gate fixes) and how you worked through it.
-- How you worked with the AI assistant: what you delegated, what you checked yourself,
-  where it was wrong and how you caught it.
--->
+I set out to build a personal agent that is able to summarize, retrieve, and create ways to make daily worklife simpler. I chose OpenClaw, Telegram, and local Gemma as I thought it would make the process easier as my computer has the power to do it. Personally, the hardest hump that I had to get over was understanding why the 1 vCPU instance kept failing, which caused a lot of headaches. There was also the approval gates that kept not working and causing me to redeploy multiple instances. I had the AI create a sort of pathway of what to do and what I had to do is make sure what it suggested actually connected, and make sense for the scope of the project. Being very precise is what allowed me to catch the different edge cases of Gemma fall back, creating a gist, making sure there is proper prompt injecting for security, and being proactive in latency of the model and using it how a regular person would.
 
 ## Timeline (factual)
 
@@ -34,6 +23,11 @@ Edmarck Sosa Pineda · CSCI 599 · Fall 2026
 | Nov 16 17:50–18:15 | Memory persistence test across a restart | "Bluebird, due Friday" recalled after the v13 restart |
 | Nov 16 18:00–19:20 | Scheduled jobs v13–v15 (briefing, alert, recap) | All three delivered; alert set to every 30 min after measuring ~54k tokens/run |
 | Nov 16 19:36–19:56 | Custom skill `meeting-prep` published to ClawHub (v1.0.0, audit "Safe"), installed fresh on the instance, used live | Advanced-integration item done |
+| Nov 16 20:13–20:26 | Full dry run of the video script | Found request 1 inheriting the cloud route from an earlier tool turn; added `/new` steps to the script |
+| Nov 16 21:30 | Held messages from background turns while Ollama was healthy | Idle tailnet link slower than the 3 s probe; one bounded probe retry (v17); 0 held overnight after |
+| Nov 17 07:31–18:00 | Scheduled jobs ran unattended: briefing 07:31, alerts 08:30 and 11:30, recap 18:00 | Proactive evidence at real times |
+| Nov 17 14:52–15:00 | First injection-test attempt ran on local Gemma | One session id stayed private through four `/new` commands; private flag now cleared on `/new`/`/reset` (v18) |
+| Nov 17 18:06–18:11 | Injection tests P1 (email), P2 (calendar), P3 (web page) rerun on the cloud model | All pass: instructions recognised or ignored, no send or change attempted |
 
 ## AI assistance (attribution)
 
@@ -63,13 +57,10 @@ and verified by tests and/or a live run before being kept.
   became a regression test.
 - Missed that OpenClaw denies approval requests instantly when no owner is configured; found
   from `approval_requested` → `denied` in the same second.
+- Assumed OpenClaw's session id changes on `/new`; the private-session file showed one id
+  surviving four resets, which sent a fresh conversation to local Gemma.
 
-## ✍️ What I learned
+## What I learned
 
-<!-- Replace with your own reflection (5–10 bullets or 2 paragraphs). Prompts:
-- Routing on explicit, testable properties vs. asking a model to route.
-- Why "human approval" has to live outside the model (and why OAuth scopes are not enough).
-- What the logs taught you that guessing did not (MTU ladder, exit 137, same-second denials).
-- Operating a stateful agent on a FUSE-mounted bucket (snapshots, rename limits).
-- What you would do differently with another week.
--->
+I learned that making an agent work in daily life is more than getting a model to answer a message. I had to make routing decisions based on things I could actually test, like whether a turn needed tools or belonged to a private session. I also learned that human approval has to happen outside the model. Giving the agent an OAuth connection did not mean it should be able to send something on its own, and the live tests caught cases where the approval gate looked right in code but failed when the agent used it.
+The logs helped me get past a lot of wrong guesses. Exit 137 pointed me to memory, the Windows event log explained why the local route went down overnight, and the size-ladder test showed why small requests worked while larger ones hung. The same thing happened with the approval gate where I was seeing a request denied in the same second led me to the missing owner setting. I learned to test the agent the way a regular person would use it, checking all edge cases, then check what actually happened instead of trusting what I expected to happen from the guidance of AI. With another week, I would spend more time on recovery after restarts and on making the scheduled jobs use fewer tokens, so the agent is easier to keep running every day. I would also add an easy profile switcher so that way I can pull from multiple emails and calendars and perhaps even have it integrated on Brightspace.
