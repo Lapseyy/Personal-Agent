@@ -47,6 +47,7 @@ I did not accept generated code because it ran. Every module has unit tests (92 
 | Nov 17 07:31–18:00 | Scheduled jobs ran unattended: briefing 07:31, alerts 08:30 and 11:30, recap 18:00 | Proactive evidence at real times |
 | Nov 17 14:52–15:00 | First injection-test attempt ran on local Gemma | One session id stayed private through four `/new` commands; private flag now cleared on `/new`/`/reset` (v18) |
 | Nov 17 18:06–18:11 | Injection tests P1 (email), P2 (calendar), P3 (web page) rerun on the cloud model | All pass: instructions recognised or ignored, no send or change attempted |
+| Nov 17 21:58 – Nov 18 10:44 | Optional v19 (OpenClaw-managed Tailscale Serve for tokenless grader access) failed to boot: managed Serve requires a loopback-bound gateway, ours binds to the container network for Cloud Run's probe | Instance down ~12.5 h; restored with `-ManagedServe 0` + `gcloud beta run instances start`; submitted config unchanged |
 
 ## AI assistance (attribution)
 

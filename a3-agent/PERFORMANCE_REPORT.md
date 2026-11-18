@@ -101,6 +101,19 @@ UTC), 0 held, 0 failed; the 32 local ones had p50 1.7 s, max 3.5 s. A side effec
 into the chat, which looks like a failed send to the user; starting a new session (`/new`)
 ends the private session and stops it.
 
+**Failed optional deploy and outage (Nov 17–18).** After submission, v19 tried OpenClaw-managed
+Tailscale Serve for tokenless grader access. OpenClaw rejected it at boot
+("gateway.bind must resolve to loopback when gateway.tailscale.mode=serve"), because this
+deployment binds the gateway to the container network so Cloud Run's TCP startup probe can
+reach it. The entrypoint failed closed four times (06:02–06:12 UTC Nov 18) and Cloud Run left
+the instance stopped. It was restored at 18:40 UTC by redeploying the same image with
+`-ManagedServe 0` and `gcloud beta run instances start`; the rejected setting was never saved,
+so the snapshot restored cleanly. Downtime: about 12.5 hours. On the restart, the missed
+morning briefing ran as a catch-up and hit the 60 s setup watchdog while the agent was still
+in startup preparation (reported as two failures in Telegram). Lesson: optional changes go
+through a soak run before they are left unattended, and the restart policy alone does not
+recover from a deterministic boot failure.
+
 **Restarts and state.** Planned restarts (deploys) log `shutdown_begin` → `state_snapshot`
 → `state_restored` → `gateway_started`. Once (05:34 UTC Nov 16) the container was stopped
 before the shutdown snapshot finished, so the next boot restored the previous snapshot; for
