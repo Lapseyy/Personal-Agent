@@ -5368,5 +5368,1895 @@
     },
     "severity": "INFO",
     "timestamp": "2026-11-17T22:30:16.166810Z"
+  },
+  {
+    "insertId": "6afcdacd00015d7494d74d3e",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 20507,
+      "model": "gemma4:e4b",
+      "request_id": "0bd45c88-f953-4dd7-930b-d09a666e43de",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-17T22:53:01.088Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T22:53:01.257176964Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T22:53:01.089460Z"
+  },
+  {
+    "insertId": "6afcdb46000ab6be440934b3",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 4059,
+      "model": "gemma4:e4b",
+      "request_id": "626c52cf-c36e-4025-8898-923a08d1f5b3",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-17T22:55:02.701Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T22:55:03.033736921Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T22:55:02.702142Z"
+  },
+  {
+    "insertId": "6afcdb6b000bd48deb442f3f",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 11990,
+      "model": "gemma4:e4b",
+      "request_id": "73e3db69-8197-46f9-af5b-5fe33609276e",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-17T22:55:39.774Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T22:55:39.921885773Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T22:55:39.775309Z"
+  },
+  {
+    "insertId": "6afcdbb2000910565ba35b95",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 2944,
+      "model": "gemma4:e4b",
+      "request_id": "2f83f1b2-639d-4fa7-900b-18b450cd554c",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-17T22:56:50.593Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T22:56:50.736100845Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T22:56:50.594006Z"
+  },
+  {
+    "insertId": "6afcdbe4000eda1b88eb02d4",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 2033,
+      "model": "gemma4:e4b",
+      "request_id": "537af49f-b1c2-4e37-a717-7d4d7946eecf",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-17T22:57:40.972Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T22:57:41.240694067Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T22:57:40.973339Z"
+  },
+  {
+    "insertId": "6afcdc3d0003ae3db733cbdb",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 1874,
+      "model": "gemma4:e4b",
+      "request_id": "a9c34075-ff9a-42f1-a905-9390ec93ba68",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-17T22:59:09.240Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T22:59:09.407194382Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T22:59:09.241213Z"
+  },
+  {
+    "insertId": "6afcdc8400077f6b863f774a",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 19645,
+      "model": "gpt-5.6-sol",
+      "request_id": "72cd0d6e-12a9-474b-9061-551276985654",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-17T23:00:20.490Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:00:20.537398078Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:00:20.491371Z"
+  },
+  {
+    "insertId": "6afcdcc5000ba8ed5e3aef1f",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 871,
+      "model": "gemma4:e4b",
+      "request_id": "a6d6f76e-816f-4d1b-9c41-d7dc7576ef96",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-17T23:01:25.763Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:01:26.008913767Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:01:25.764141Z"
+  },
+  {
+    "insertId": "6afcdcdb0002c499b7ee9c1b",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 1668,
+      "model": "gemma4:e4b",
+      "request_id": "770b19ac-ecab-4131-8dfc-fb1f231ef9e0",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-17T23:01:47.180Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:01:47.312770745Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:01:47.181401Z"
+  },
+  {
+    "insertId": "6afcdcf0000e09fd325899e5",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 2507,
+      "model": "gemma4:e4b",
+      "request_id": "5900c27a-667f-4659-9ac9-e46e2828d485",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-17T23:02:08.919Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:02:09.225756130Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:02:08.920061Z"
+  },
+  {
+    "insertId": "6afce2c3000154ed7f510903",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 2722,
+      "model": "gemma4:e4b",
+      "request_id": "d4fe8655-9e80-454c-af89-6a84e2ce4487",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-17T23:26:59.086Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:26:59.350439584Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:26:59.087277Z"
+  },
+  {
+    "insertId": "6afce391000e934dbfe40c45",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 23639,
+      "model": "gpt-5.6-sol",
+      "request_id": "69ade8eb-072a-4bd2-845b-f340b7d05b51",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-17T23:30:25.954Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:30:26.092689891Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:30:25.955213Z"
+  },
+  {
+    "insertId": "6afce9c80003b73ecd5bbe42",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 2110,
+      "model": "gemma4:e4b",
+      "request_id": "ea9b869e-cebf-410f-9ab8-cd5540a0e7d2",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-17T23:56:56.242Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:56:56.495035613Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:56:56.243518Z"
+  },
+  {
+    "insertId": "6afcea9f000a7c4f25ff1314",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 29928,
+      "model": "gpt-5.6-sol",
+      "request_id": "fb5f5a58-bc2f-4078-ab05-b100a8caeb2b",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T00:00:31.686Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T00:00:31.979818828Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T00:00:31.687183Z"
+  },
+  {
+    "insertId": "6afcf0d0000a4a78a3c86363",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 2850,
+      "model": "gemma4:e4b",
+      "request_id": "44e86e33-33c4-46d8-b663-419f451a6076",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T00:26:56.673Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T00:26:56.952092077Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T00:26:56.674424Z"
+  },
+  {
+    "insertId": "6afcf198000ade51b972c32a",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 14870,
+      "model": "gpt-5.6-sol",
+      "request_id": "3e0e272e-55da-4f3f-8ef3-c53e8e166222",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T00:30:16.711Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T00:30:17.041469977Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T00:30:16.712273Z"
+  },
+  {
+    "insertId": "6afcf7dd000cee6deb714e8c",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 7737,
+      "model": "gemma4:e4b",
+      "request_id": "1a40f6bd-3655-4252-9de7-139ae9368a09",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T00:57:01.846Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T00:57:02.063860277Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T00:57:01.847469Z"
+  },
+  {
+    "insertId": "6afcf8a1000baf0b65cf246c",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 15870,
+      "model": "gpt-5.6-sol",
+      "request_id": "f4df970f-560a-4000-866b-ccb502cb37d8",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T01:00:17.765Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T01:00:18.045776758Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T01:00:17.765707Z"
+  },
+  {
+    "insertId": "6afcfee1000688cb4f304eb6",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 3437,
+      "model": "gemma4:e4b",
+      "request_id": "ab98a2be-4c7c-4360-a8ba-1d37007b633a",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T01:26:57.427Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T01:26:57.473412891Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T01:26:57.428235Z"
+  },
+  {
+    "insertId": "6afcffad00058b31ea8b2830",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 19579,
+      "model": "gpt-5.6-sol",
+      "request_id": "5cfa4745-ee92-4b30-bf15-efa6ac3ef7ec",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T01:30:21.362Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T01:30:21.651844955Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T01:30:21.363313Z"
+  },
+  {
+    "insertId": "6afd0610000347f577cb6160",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 42082,
+      "model": "gemma4:e4b",
+      "request_id": "fd4039e0-3b85-49b5-997a-dfffd168887b",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T01:57:36.214Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T01:57:36.224160069Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T01:57:36.215029Z"
+  },
+  {
+    "insertId": "6afd06b50008514b95242ef5",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 14627,
+      "model": "gpt-5.6-sol",
+      "request_id": "c758fafa-74b6-4e4b-a37b-9b1075244a4c",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T02:00:21.544Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T02:00:21.772933666Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T02:00:21.545099Z"
+  },
+  {
+    "insertId": "6afd06d200000cec20cf189f",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 26458,
+      "model": "gpt-5.6-sol",
+      "request_id": "b12f35ad-c5b0-4469-8d83-1a52e3fc89f5",
+      "route": "cloud",
+      "rule": "tools_cloud",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T02:00:50.002Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T02:00:50.078117703Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T02:00:50.003308Z"
+  },
+  {
+    "insertId": "6afd08340004cbc8e979e7d9",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 6877,
+      "model": "gpt-5.6-sol",
+      "request_id": "e5db2893-2d9d-42a8-9a15-c04b133923a0",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T02:06:44.313Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T02:06:44.445904968Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T02:06:44.314312Z"
+  },
+  {
+    "insertId": "6afd085f0007e4137517605d",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 14611,
+      "model": "gpt-5.6-sol",
+      "request_id": "8a4f3b5f-f6e0-46b5-b6ab-b83648333d54",
+      "route": "cloud",
+      "rule": "tools_cloud",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T02:07:27.516Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T02:07:27.543450089Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T02:07:27.517139Z"
+  },
+  {
+    "insertId": "6afd0891000d29cb1db7303f",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 19030,
+      "model": "gpt-5.6-sol",
+      "request_id": "89a25a02-645c-4fcd-85eb-e2f8bf0f2fd6",
+      "route": "cloud",
+      "rule": "tools_cloud",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T02:08:17.862Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T02:08:17.951586081Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T02:08:17.862667Z"
+  },
+  {
+    "insertId": "6afd0967000e01e5f3f53846",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 6908,
+      "model": "gpt-5.6-sol",
+      "request_id": "9b1b27e1-1bbc-4604-9a07-11656df3bc33",
+      "route": "cloud",
+      "rule": "tools_session_cloud",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T02:11:51.917Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T02:11:52.085544696Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T02:11:51.917989Z"
+  },
+  {
+    "insertId": "6afd0cf1000bcfb0e60cfe90",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 3824,
+      "model": "gemma4:e4b",
+      "request_id": "3cfd1181-e035-4f5c-946f-302a9dab0134",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T02:26:57.773Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T02:26:57.844062480Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T02:26:57.774064Z"
+  },
+  {
+    "insertId": "6afd0dc1000aa3b60024fa11",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 23605,
+      "model": "gpt-5.6-sol",
+      "request_id": "b0d0b468-3841-4c36-bc38-d38687501c6c",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T02:30:25.696Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T02:30:26.003285140Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T02:30:25.697270Z"
+  },
+  {
+    "insertId": "6afd13fb000b082e3134657d",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 5598,
+      "model": "gemma4:e4b",
+      "request_id": "45955e58-a7b5-4ecb-a435-23bb4fc3293e",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T02:56:59.722Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T02:56:59.794406244Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T02:56:59.722990Z"
+  },
+  {
+    "insertId": "6afd14c300042219f37f9a8f",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 17534,
+      "model": "gpt-5.6-sol",
+      "request_id": "079fa72b-f6ef-4749-9e04-c7024a7ae5ba",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T03:00:19.270Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T03:00:19.344232926Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T03:00:19.270873Z"
+  },
+  {
+    "insertId": "6afd1b1700099ffac0b0a4a5",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 25544,
+      "model": "gemma4:e4b",
+      "request_id": "01e97449-3cc0-42af-b463-fdc07b098c01",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T03:27:19.630Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T03:27:19.640930833Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T03:27:19.630778Z"
+  },
+  {
+    "insertId": "6afd1bcd000e1a661ac18b5d",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 14829,
+      "model": "gpt-5.6-sol",
+      "request_id": "ef59ab2f-32e8-4423-86c9-49158e2c8c80",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T03:30:21.923Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T03:30:21.965305379Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T03:30:21.924262Z"
+  },
+  {
+    "insertId": "6afd20a10005f3eb2b784c6f",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 5383,
+      "model": "gemma4:e4b",
+      "request_id": "a2346340-2719-4f14-b998-a2fd638e6d45",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T03:50:57.389Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T03:50:57.549119511Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T03:50:57.390123Z"
+  },
+  {
+    "insertId": "6afd20c20005e6b3cde29ee9",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 705,
+      "model": "gemma4:e4b",
+      "request_id": "1607e46e-34d2-4b9a-a8a5-1f88d3b0f818",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T03:51:30.386Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T03:51:30.494242744Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T03:51:30.386739Z"
+  },
+  {
+    "insertId": "6afd22080001795d112f7100",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 2375,
+      "model": "gemma4:e4b",
+      "request_id": "7ac8a0b1-9a61-4b31-879e-d8fac74893cb",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T03:56:56.096Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T03:56:56.297443886Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T03:56:56.096605Z"
+  },
+  {
+    "insertId": "6afd22a700011480b95db271",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 1692,
+      "model": "gemma4:e4b",
+      "request_id": "165bf26f-6c41-4847-b06a-1f5ab2a31db6",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T03:59:35.070Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T03:59:35.299008298Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T03:59:35.070784Z"
+  },
+  {
+    "insertId": "6afd22c9000100a3d3a83157",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 5198,
+      "model": "gpt-5.6-sol",
+      "request_id": "5ea94cc7-ca9d-497b-b9e0-1d95b8b0efc6",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T04:00:09.065Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:00:09.197850195Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:00:09.065699Z"
+  },
+  {
+    "insertId": "6afd22ce000da1a9e31a8ab9",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 14069,
+      "model": "gpt-5.6-sol",
+      "request_id": "f414cd73-a748-4f61-a453-7fb875bc3e08",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T04:00:14.892Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:00:15.193574670Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:00:14.893353Z"
+  },
+  {
+    "insertId": "6afd232f000489721a416dd0",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "local_unavailable",
+      "latency_ms": 172,
+      "model": "none",
+      "request_id": "1b1b911e-c065-4611-8ea3-b1df493a8eb4",
+      "route": "held",
+      "rule": "privacy_held",
+      "success": true,
+      "task_type": "private",
+      "ts": "2026-11-18T04:01:51.296Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:01:51.407781244Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:01:51.297330Z"
+  },
+  {
+    "insertId": "6afd2379000c3401b8750ed3",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 1284,
+      "model": "gemma4:e4b",
+      "request_id": "3cba698c-c423-4ba9-b3c2-fbde24d3eea8",
+      "route": "local",
+      "rule": "privacy_local",
+      "success": true,
+      "task_type": "private",
+      "ts": "2026-11-18T04:03:05.799Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:03:05.983335077Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:03:05.799745Z"
+  },
+  {
+    "insertId": "6afd23c70005aca0c9ee6f08",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 23574,
+      "model": "gpt-5.6-sol",
+      "request_id": "f5b1969a-db8d-45be-bd4d-1d4e934ea16c",
+      "route": "cloud",
+      "rule": "tools_cloud",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T04:04:23.371Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:04:23.419181904Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:04:23.371872Z"
+  },
+  {
+    "insertId": "6afd23e100008eb872f22556",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 11232,
+      "model": "gpt-5.6-sol",
+      "request_id": "f739ba5a-bf24-4755-90ff-2cee774dea8d",
+      "route": "cloud",
+      "rule": "tools_session_cloud",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T04:04:49.035Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:04:49.061423777Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:04:49.036536Z"
+  },
+  {
+    "insertId": "6afd2409000c32cf3a08673e",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 11452,
+      "model": "gpt-5.6-sol",
+      "request_id": "142bc09f-4b1e-4f7b-b322-6530b2654e65",
+      "route": "cloud",
+      "rule": "tools_cloud",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T04:05:29.798Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:05:30.047089918Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:05:29.799439Z"
+  },
+  {
+    "insertId": "6afd244f0000115664e996ef",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 3977,
+      "model": "gpt-5.6-sol",
+      "request_id": "a6cd0be1-0b1a-4ddc-8607-674756f3c7b4",
+      "route": "cloud",
+      "rule": "tools_session_cloud",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T04:06:39.003Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:06:39.178645188Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:06:39.004438Z"
+  },
+  {
+    "insertId": "6afd24d8000ddb1bcf4dc0fb",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 102319,
+      "model": "gpt-5.6-sol",
+      "request_id": "bcbae9d4-2db3-4f4f-89da-ba194faf39f4",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T04:08:56.907Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:08:57.200696616Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:08:56.908059Z"
+  },
+  {
+    "insertId": "6afd2531000746e453b5f0e9",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 27502,
+      "model": "gpt-5.6-sol",
+      "request_id": "b6f8fe6e-7bb7-44e4-bcca-1d5c8a0057d5",
+      "route": "cloud",
+      "rule": "tools_cloud",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T04:10:25.476Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:10:25.673702779Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:10:25.476900Z"
+  },
+  {
+    "insertId": "6afd27e000008e5c3532ecd5",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 2186,
+      "model": "gemma4:e4b",
+      "request_id": "b8f599e5-c5b4-4cfe-bce7-40af5b441b63",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T04:21:52.035Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:21:52.150930226Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:21:52.036444Z"
+  },
+  {
+    "insertId": "6afd27fd00065760a1ef0738",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 5445,
+      "model": "gpt-5.6-sol",
+      "request_id": "3308c65d-139a-4f50-8317-5b1967856abb",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T04:22:21.415Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:22:21.682554940Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:22:21.415584Z"
+  },
+  {
+    "insertId": "6afd282a00056a11f3c1e3fe",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "local_unavailable",
+      "latency_ms": 160,
+      "model": "none",
+      "request_id": "d9adc76a-1c71-4215-8a8f-5ff88a754ec4",
+      "route": "held",
+      "rule": "privacy_held",
+      "success": true,
+      "task_type": "private",
+      "ts": "2026-11-18T04:23:06.354Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:23:06.489884008Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:23:06.354833Z"
+  },
+  {
+    "insertId": "6afd28890004efbfd21faf56",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 2034,
+      "model": "gemma4:e4b",
+      "request_id": "415574dc-7b75-4a52-bc2c-102e6cfae655",
+      "route": "local",
+      "rule": "privacy_local",
+      "success": true,
+      "task_type": "private",
+      "ts": "2026-11-18T04:24:41.322Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:24:41.364717178Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:24:41.323519Z"
+  },
+  {
+    "insertId": "6afd28c8000746fab010d673",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 17184,
+      "model": "gemma4:e4b",
+      "request_id": "3b2991cf-c8b0-4f20-b05e-189708571b06",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T04:25:44.476Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:25:44.762406837Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:25:44.476922Z"
+  },
+  {
+    "insertId": "6afd28e200007a2292b3cfd6",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 1260,
+      "model": "gemma4:e4b",
+      "request_id": "6432be3d-5b3d-45b1-9335-316e594c5238",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T04:26:10.030Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:26:10.248404143Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:26:10.031266Z"
+  },
+  {
+    "insertId": "6afd28ed0007da6f8f1789a3",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 1039,
+      "model": "gemma4:e4b",
+      "request_id": "82182633-a934-4b83-8112-e10b3a632b4a",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T04:26:21.514Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:26:21.573014618Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:26:21.514671Z"
+  },
+  {
+    "insertId": "6afd2909000300b203cf92ef",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 1255,
+      "model": "gemma4:e4b",
+      "request_id": "d58ab442-311d-4602-b4c0-d0579f69613c",
+      "route": "local",
+      "rule": "private_session_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T04:26:49.195Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:26:49.506235776Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:26:49.196786Z"
+  },
+  {
+    "insertId": "6afd2922000807a012bfadb3",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 9864,
+      "model": "gpt-5.6-sol",
+      "request_id": "baa2ef0a-479c-4864-92d6-d30acce9994a",
+      "route": "cloud",
+      "rule": "tools_cloud",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T04:27:14.525Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:27:14.809109255Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:27:14.526240Z"
+  },
+  {
+    "insertId": "6afd296900061620ae1b37ce",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 14206,
+      "model": "gpt-5.6-sol",
+      "request_id": "ce81fa8f-670d-47f4-b75a-667aa5bec2e5",
+      "route": "cloud",
+      "rule": "tools_cloud",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T04:28:25.398Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:28:25.658100973Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:28:25.398880Z"
+  },
+  {
+    "insertId": "6afd298c000999942a5b9774",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 7273,
+      "model": "gpt-5.6-sol",
+      "request_id": "bcd2769c-6bc7-466d-bb86-8749d02480eb",
+      "route": "cloud",
+      "rule": "tools_session_cloud",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T04:29:00.628Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:29:00.840301785Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:29:00.629140Z"
+  },
+  {
+    "insertId": "6afd29d6000670c2047c60ed",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 13472,
+      "model": "gpt-5.6-sol",
+      "request_id": "9911278c-870c-4110-b779-34ec4b98fb7d",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T04:30:14.421Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:30:14.664952136Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:30:14.422082Z"
+  },
+  {
+    "insertId": "6afd29f5000be4fa3bd556f1",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 79734,
+      "model": "gpt-5.6-sol",
+      "request_id": "d93d7ccf-694c-41d6-83be-211ec9775ee7",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T04:30:45.778Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:30:45.965052692Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:30:45.779514Z"
+  },
+  {
+    "insertId": "6afd2a41000179a4687a918d",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 6223,
+      "model": "gpt-5.6-sol",
+      "request_id": "bdc2ee8e-35b5-4e3e-8d06-c0bea6e03d96",
+      "route": "cloud",
+      "rule": "tools_cloud",
+      "success": true,
+      "task_type": "tool_use",
+      "ts": "2026-11-18T04:32:01.096Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:32:01.345217020Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:32:01.096676Z"
+  },
+  {
+    "insertId": "6afd301a000465ed0f2e213a",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 3416,
+      "model": "gemma4:e4b",
+      "request_id": "2dcbc7c7-485f-4b31-99ae-0aeb3b282251",
+      "route": "local",
+      "rule": "simple_local",
+      "success": true,
+      "task_type": "simple",
+      "ts": "2026-11-18T04:56:58.287Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T04:56:58.596985966Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T04:56:58.288237Z"
+  },
+  {
+    "insertId": "6afd30e4000d03cf431f1b64",
+    "jsonPayload": {
+      "component": "a3-router",
+      "error_class": "none",
+      "latency_ms": 19093,
+      "model": "gpt-5.6-sol",
+      "request_id": "6a0e0605-0159-4206-8ada-7feb165578a0",
+      "route": "cloud",
+      "rule": "reasoning_cloud",
+      "success": true,
+      "task_type": "reasoning",
+      "ts": "2026-11-18T05:00:20.852Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-18T05:00:20.983353821Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-18T05:00:20.852943Z"
   }
 ]

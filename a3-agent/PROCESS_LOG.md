@@ -2,9 +2,28 @@
 
 Edmarck Sosa Pineda · CSCI 599 · Fall 2026
 
+## AI tools used
+
+- **Claude (Anthropic) in claude.ai with a cloud workspace linked to my desktop** — Claude Fable 5.2 and Claude Opus 5.5 (switched mid-project). Used as a pair engineer for code, configuration, debugging and documentation drafts.
+- **Gemma 4 E4B (`gemma4:e4b`) via Ollama** — runtime model of the agent (local route), not a development tool.
+- **OpenAI GPT-5.6 (sol) via ChatGPT Edu** — runtime model of the agent (cloud route), not a development tool.
+
 ## Narrative
 
 I set out to build a personal agent that is able to summarize, retrieve, and create ways to make daily worklife simpler. I chose OpenClaw, Telegram, and local Gemma as I thought it would make the process easier as my computer has the power to do it. Personally, the hardest hump that I had to get over was understanding why the 1 vCPU instance kept failing, which caused a lot of headaches. There was also the approval gates that kept not working and causing me to redeploy multiple instances. I had the AI create a sort of pathway of what to do and what I had to do is make sure what it suggested actually connected, and make sense for the scope of the project. Being very precise is what allowed me to catch the different edge cases of Gemma fall back, creating a gist, making sure there is proper prompt injecting for security, and being proactive in latency of the model and using it how a regular person would.
+
+
+Prompts that produced material output (verbatim or near-verbatim):
+
+- "For some reason it is stalled? Is it because i dont have my .env folder on file?" — led to the boot investigation and, eventually, the 1 vCPU → 2 vCPU change.
+- "From earlier you said you needed … Is this what this build contains? What files have you changed? I want to know before I start deployment again" — from then on every build came with a change list before deploying.
+- "I can access it now … how far away are we from completing the project?" — produced the remaining-work plan mapped to the rubric.
+- "Lets make a mock run of all scenarios that will be covered in the grading portion." — the dry run that exposed the `/new` and private-session problems before recording.
+- "Here are the results" (with the approval and routing log tables) — each log paste drove one of the approval-gate and routing fixes (v9–v12, v17, v18).
+
+## Verification narrative
+
+I did not accept generated code because it ran. Every module has unit tests (92 by the end): every routing rule including the HELD path, the approval policy, the recipient allowlist, single-use tokens, scheduled-run blocking, and injection cases; every bug found live got a regression test with the exact input from the logs. Hook behaviour and config keys were checked against the OpenClaw 2026.10.9 documentation shipped in the package, and several assumptions failed there or live (session ids surviving `/new`, approvals needing an owner). Live behaviour was verified from structured logs rather than chat replies: the routing log for each route, the approval log for every send attempt, the lifecycle log for restarts and snapshots, and OpenClaw's run history for each scheduled job. Network problems were traced with a request-size ladder and the Windows event log instead of guessing. The three prompt-injection tests were run against the deployed agent and checked in the approval log.
 
 ## Timeline (factual)
 

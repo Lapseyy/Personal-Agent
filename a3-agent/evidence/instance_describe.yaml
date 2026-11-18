@@ -1,0 +1,106 @@
+apiVersion: run.googleapis.com/v1
+kind: Instance
+metadata:
+  annotations:
+    run.googleapis.com/client-name: gcloud
+    run.googleapis.com/client-version: 593.0.0
+    run.googleapis.com/ingress: all
+    run.googleapis.com/ingress-status: all
+    run.googleapis.com/operation-id: 2f351249-acd4-4609-baef-428b7999a0e0
+    run.googleapis.com/ssh-enabled: 'true'
+    serving.knative.dev/creator: sosapine@usc.edu
+    serving.knative.dev/lastModifier: sosapine@usc.edu
+  creationTimestamp: '2026-11-16T03:45:36.432882Z'
+  generation: 24
+  labels:
+    cloud.googleapis.com/location: us-west1
+    run.googleapis.com/lastUpdatedTime: '2026-11-17T23:05:58.803833Z'
+  name: a3-agent
+  namespace: '655565906661'
+  resourceVersion: AAZggbpktyg
+  selfLink: /apis/run.googleapis.com/v1/namespaces/655565906661/instances/a3-agent
+  uid: 8ac41c36-fb7e-470e-b917-63e955012c46
+spec:
+  containers:
+  - env:
+    - name: A3_OLLAMA_TAILNET_HOST
+      value: 100.74.182.24
+    - name: TAILSCALE_HOSTNAME
+      value: a3-agent
+    - name: TAILSCALE_AUTHKEY
+      valueFrom:
+        secretKeyRef:
+          key: latest
+          name: tailscale-authkey
+    - name: TELEGRAM_BOT_TOKEN
+      valueFrom:
+        secretKeyRef:
+          key: latest
+          name: telegram-bot-token
+    - name: OPENCLAW_GATEWAY_TOKEN
+      valueFrom:
+        secretKeyRef:
+          key: latest
+          name: openclaw-gateway-key
+    - name: GOG_KEYRING_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          key: latest
+          name: gog-keyring-password
+    - name: GOG_ACCOUNT
+      valueFrom:
+        secretKeyRef:
+          key: latest
+          name: gog-account
+    image: us-west1-docker.pkg.dev/a3-sosapineda-599/a3/a3-agent:v18
+    ports:
+    - containerPort: 18789
+      name: http1
+    resources:
+      limits:
+        cpu: '2'
+        memory: 4Gi
+    startupProbe:
+      failureThreshold: 30
+      initialDelaySeconds: 60
+      periodSeconds: 20
+      tcpSocket:
+        port: 18789
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /mnt/agent-state
+      name: state
+  restartPolicy: Always
+  sandboxes: {}
+  serviceAccountName: a3-runtime@a3-sosapineda-599.iam.gserviceaccount.com
+  volumes:
+  - csi:
+      driver: gcsfuse.run.googleapis.com
+      volumeAttributes:
+        bucketName: a3-sosapineda-599-state
+        mountOptions: uid=1000,gid=1000,file-mode=600,dir-mode=700
+    name: state
+status:
+  conditions:
+  - lastTransitionTime: '2026-11-17T23:06:42.365665Z'
+    message: Imported container image in 28.93s.
+    status: 'True'
+    type: ContainerReady
+  - lastTransitionTime: '2026-11-17T23:06:42.618099Z'
+    message: Provisioned imported containers.
+    status: 'True'
+    type: ResourcesAvailable
+  - lastTransitionTime: '2026-11-18T00:02:34.472614Z'
+    message: System will retry after 30:00 from lastTransitionTime for polling interval
+    reason: WaitingForOperation
+    severity: Info
+    status: 'True'
+    type: Retry
+  - lastTransitionTime: '2026-11-17T23:06:51.067764Z'
+    message: Started instance in 7.21s.
+    status: 'True'
+    type: Running
+  logUri: https://console.cloud.google.com/logs/viewer?project=a3-sosapineda-599&advancedFilter=resource.type%3D%22cloud_run_instance%22%0Aresource.labels.location%3D%22us-west1%22%0Aresource.labels.instance_name%3D%22a3-agent%22
+  observedGeneration: 24
+  urls:
+  - https://a3-agent-655565906661.us-west1.run.app

@@ -197,11 +197,20 @@ Workspace files (`SOUL.md`, `USER.md`, `IDENTITY.md`) live on the bucket at
 
 ## Grader access
 
-Grader credentials (Telegram access or a test chat, and anything else needed) are submitted
-**through Brightspace only**, never in this repository, the README, or the video. The bot
-accepts messages only from allowlisted numeric Telegram user IDs, so access is added by
-appending the grader's ID to `channels.telegram.allowFrom` in
-`config/openclaw.container.patch.json5` and redeploying.
+Everything below is submitted **through Brightspace only**, never in this repository, the
+README or the video:
+
+- **Tailscale share link** for the `a3-agent` node, and the **agent URL**
+  (`https://<agent>.<tailnet>.ts.net/`, the OpenClaw Control UI served with `tailscale serve`;
+  gateway auth accepts the Tailscale identity, `gateway.auth.allowTailscale: true`).
+- **Test email/calendar account** login (one dedicated class-only Gmail account that also owns
+  the calendar), 2-Step Verification off (Path 1, because the agent uses Gmail/Calendar through
+  OAuth, not an App Password).
+
+Graders can plant a test meeting to see the proactive alert (sent 30–60 minutes before the
+start, checked every 30 minutes) and a test email for the injection defense. The Telegram bot
+accepts only allowlisted numeric user IDs; a grader ID can be added to
+`channels.telegram.allowFrom` in `config/openclaw.container.patch.json5` and redeployed.
 
 ## Local route: operating notes
 

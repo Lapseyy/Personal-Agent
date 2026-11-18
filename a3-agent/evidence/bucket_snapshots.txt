@@ -1,0 +1,10 @@
+         0  2026-11-16T04:22:46Z  gs://a3-sosapineda-599-state/backups/
+
+gs://a3-sosapineda-599-state/backups/:
+         0  2026-11-16T04:22:46Z  gs://a3-sosapineda-599-state/backups/
+   1495676  2026-11-17T03:04:51Z  gs://a3-sosapineda-599-state/backups/2026-11-17T03-04-47.399+00-00-openclaw-backup.tar.gz
+   1629845  2026-11-17T03:41:09Z  gs://a3-sosapineda-599-state/backups/2026-11-17T03-41-07.109+00-00-openclaw-backup.tar.gz
+   1650660  2026-11-17T03:55:28Z  gs://a3-sosapineda-599-state/backups/2026-11-17T03-54-57.453+00-00-openclaw-backup.tar.gz
+   2067391  2026-11-17T05:40:39Z  gs://a3-sosapineda-599-state/backups/2026-11-17T05-40-36.179+00-00-openclaw-backup.tar.gz
+   3545082  2026-11-17T23:06:06Z  gs://a3-sosapineda-599-state/backups/2026-11-17T23-06-03.530+00-00-openclaw-backup.tar.gz
+TOTAL: 7 objects, 10388654 bytes (9.91MiB)

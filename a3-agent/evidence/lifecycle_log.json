@@ -4798,5 +4798,230 @@
     },
     "severity": "INFO",
     "timestamp": "2026-11-17T05:43:37.488288Z"
+  },
+  {
+    "insertId": "6afcddd900062029af96f059",
+    "jsonPayload": {
+      "boot_id": "20261117T054133Z-10",
+      "component": "a3-lifecycle",
+      "detail": "signal received",
+      "event": "shutdown_begin",
+      "ts": "2026-11-17T23:06:01Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:06:01.407980028Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:06:01.401449Z"
+  },
+  {
+    "insertId": "6afcddde000a13784bd4c2a0",
+    "jsonPayload": {
+      "boot_id": "20261117T054133Z-10",
+      "component": "a3-lifecycle",
+      "detail": "2026-11-17T23-06-03.530+00-00-openclaw-backup.tar.gz",
+      "event": "state_snapshot",
+      "ts": "2026-11-17T23:06:06Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:06:06.738812001Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:06:06.660344Z"
+  },
+  {
+    "insertId": "6afcddde000e3f86fa1af858",
+    "jsonPayload": {
+      "boot_id": "20261117T054133Z-10",
+      "component": "a3-lifecycle",
+      "detail": "state flushed",
+      "event": "shutdown_complete",
+      "ts": "2026-11-17T23:06:06Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bdfeefa6cd7a3ed25be1ee40a4b5afed9f2b4ce4576cc313363a97bab252cc107ee3077d100736e93e9fd9d5ee24dfada4d4015032bfd96de34e85898e0cf0c815b1a2aabb986783037acd80e15e896b95e8cf0f866d36"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:06:07.073243001Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:06:06.933766Z"
+  },
+  {
+    "insertId": "6afcde0b000afcfbeea7a09b",
+    "jsonPayload": {
+      "boot_id": "20261117T230651Z-10",
+      "component": "a3-lifecycle",
+      "detail": "container starting",
+      "event": "start",
+      "ts": "2026-11-17T23:06:51Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:06:51.729922118Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:06:51.720123Z"
+  },
+  {
+    "insertId": "6afcde12000e4a28162565ae",
+    "jsonPayload": {
+      "boot_id": "20261117T230651Z-10",
+      "component": "a3-lifecycle",
+      "detail": "2026-11-17T23-06-03.530+00-00-openclaw-backup.tar.gz",
+      "event": "state_restored",
+      "ts": "2026-11-17T23:06:58Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:06:59.056256317Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:06:58.936488Z"
+  },
+  {
+    "insertId": "6afcde1b00007b886282c5b6",
+    "jsonPayload": {
+      "boot_id": "20261117T230651Z-10",
+      "component": "a3-lifecycle",
+      "detail": "serve https 443 to gateway",
+      "event": "tailscale_up",
+      "ts": "2026-11-17T23:07:07Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:07:07.048365986Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:07:07.031624Z"
+  },
+  {
+    "insertId": "6afcde1b00030b0ca8720f86",
+    "jsonPayload": {
+      "boot_id": "20261117T230651Z-10",
+      "component": "a3-lifecycle",
+      "detail": "account and keyring password present",
+      "event": "gog_env",
+      "ts": "2026-11-17T23:07:07Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:07:07.381312833Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:07:07.199436Z"
+  },
+  {
+    "insertId": "6afcdea2000ac6865782a0ef",
+    "jsonPayload": {
+      "boot_id": "20261117T230651Z-10",
+      "component": "a3-lifecycle",
+      "detail": "router plugin linked and config valid",
+      "event": "config_applied",
+      "ts": "2026-11-17T23:09:22Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:09:22.717014244Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:09:22.706182Z"
+  },
+  {
+    "insertId": "6afcdea2000e132ed773bf3f",
+    "jsonPayload": {
+      "boot_id": "20261117T230651Z-10",
+      "component": "a3-lifecycle",
+      "detail": "pid 364",
+      "event": "gateway_started",
+      "ts": "2026-11-17T23:09:22Z"
+    },
+    "labels": {
+      "instanceId": "00e8a408bd22091b694cd02f32ee0deb9b93987809ac587ebfb22c4217884c7d312f5cbec853fcdf3a5d0cddd994304fa8f11571aceeb9d6c9afe95feadb022b691175761d68aaffc8393a858f2ce897903736a6e203493e6e3f"
+    },
+    "logName": "projects/a3-sosapineda-599/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-11-17T23:09:23.047984376Z",
+    "resource": {
+      "labels": {
+        "instance_name": "a3-agent",
+        "location": "us-west1",
+        "project_id": "a3-sosapineda-599"
+      },
+      "type": "cloud_run_instance"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-11-17T23:09:22.922414Z"
   }
 ]

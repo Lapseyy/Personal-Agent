@@ -41,3 +41,7 @@ Thumbs.db
 # Course reference material (not part of the submission)
 /*.pdf
 /Assignment3_local_Gemma_scripts/
+
+# Submission artifacts
+*.zip
+*.mp4
