@@ -148,6 +148,18 @@ if [ "$STATE_PRESENT" = "0" ] || ! openclaw plugins list 2>/dev/null | grep -q "
 fi
 openclaw config patch --file "$APP_DIR/config/openclaw.container.patch.json5" >/dev/null \
   || fail "container config patch rejected"
+# Grader access. With A3_MANAGED_SERVE=1, OpenClaw manages the `tailscale serve` route itself
+# (it adopts the route set up above, which targets exactly http://127.0.0.1:<port>). Only that
+# managed listener lets `gateway.auth.allowTailscale` verify the visitor with `tailscale whois`,
+# so a grader on the shared node gets in with no token and no device pairing. Set it to 0 to
+# fall back to the externally managed route (token + one-time browser approval).
+if [ "${A3_MANAGED_SERVE:-0}" = "1" ]; then
+  openclaw config set gateway.tailscale.mode serve >/dev/null || fail "tailscale.mode serve rejected"
+  event INFO "managed_serve" "on"
+else
+  openclaw config set gateway.tailscale.mode off >/dev/null || fail "tailscale.mode off rejected"
+  event INFO "managed_serve" "off"
+fi
 openclaw config validate >/dev/null || fail "config validate failed"
 event INFO "config_applied" "router plugin linked and config valid"
 

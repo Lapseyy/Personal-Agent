@@ -200,9 +200,16 @@ Workspace files (`SOUL.md`, `USER.md`, `IDENTITY.md`) live on the bucket at
 Everything below is submitted **through Brightspace only**, never in this repository, the
 README or the video:
 
-- **Tailscale share link** for the `a3-agent` node, and the **agent URL**
-  (`https://<agent>.<tailnet>.ts.net/`, the OpenClaw Control UI served with `tailscale serve`;
-  gateway auth accepts the Tailscale identity, `gateway.auth.allowTailscale: true`).
+- **Tailscale share link** for the `a3-agent` node, the **agent URL**
+  (`https://<agent>.<tailnet>.ts.net/`, the OpenClaw Control UI served with `tailscale serve`),
+  and, as a fallback, the **gateway token** (≥16 characters, from Secret Manager
+  `openclaw-gateway-key`).
+
+With `A3_MANAGED_SERVE=1` (default in `deploy.ps1`), OpenClaw manages the `tailscale serve`
+route (`gateway.tailscale.mode: "serve"`), verifies the visitor with `tailscale whois`, and a
+grader on the shared node gets in with **no token and no device pairing**. With
+`-ManagedServe 0` the route is externally managed: `gateway.trustedProxies` (loopback) makes
+it work, but a new browser needs the token and a one-time `openclaw devices approve`.
 - **Test email/calendar account** login (one dedicated class-only Gmail account that also owns
   the calendar), 2-Step Verification off (Path 1, because the agent uses Gmail/Calendar through
   OAuth, not an App Password).

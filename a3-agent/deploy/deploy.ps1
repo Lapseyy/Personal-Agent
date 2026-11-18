@@ -18,6 +18,8 @@ param(
   # Extra addresses the agent may email, comma-separated. The test account itself is always
   # allowed; anything else must be listed here or the send is refused.
   [string]$EmailAllowlist = "",
+  # 1 = OpenClaw manages the Tailscale Serve route (tokenless grader access); 0 = token + pairing.
+  [string]$ManagedServe = "1",
   [switch]$SkipBuild
 )
 $ErrorActionPreference = "Stop"
@@ -31,7 +33,7 @@ if (-not $SkipBuild) {
   if ($LASTEXITCODE -ne 0) { throw "Cloud Build failed" }
 }
 
-$envVars = "A3_OLLAMA_TAILNET_HOST=$OllamaTailnetHost,TAILSCALE_HOSTNAME=a3-agent"
+$envVars = "A3_OLLAMA_TAILNET_HOST=$OllamaTailnetHost,TAILSCALE_HOSTNAME=a3-agent,A3_MANAGED_SERVE=$ManagedServe"
 if ($EmailAllowlist -ne "") {
   # gcloud splits this flag on commas, so the addresses travel separated by ";".
   # The agent accepts commas, semicolons or spaces between addresses.

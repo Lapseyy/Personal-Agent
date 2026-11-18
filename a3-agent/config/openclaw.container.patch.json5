@@ -66,6 +66,10 @@
     // public URL rejects anonymous traffic. Graders come in through `tailscale serve`.
     bind: "lan",
     auth: { allowTailscale: true },
+    // `tailscale serve` (in this container) terminates HTTPS and forwards from loopback. The
+    // gateway only trusts forwarded client headers from listed proxies; without this the
+    // dashboard answered "proxy_attribution_required" (found in the grader-access test).
+    trustedProxies: ["127.0.0.1", "::1"],
     controlUi: { allowedOrigins: ["https://a3-agent.tail03df8a.ts.net"] },
   },
 }
