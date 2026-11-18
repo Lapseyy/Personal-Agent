@@ -88,6 +88,22 @@ export default definePluginEntry({
       runtime.onModelCallEnded(runKeyOf(ctx, event.runId), event);
     });
 
+    // /new and /reset end the private session: the user chose a fresh conversation.
+    const resetSession = (refs: (string | undefined)[], reason: string) => {
+      const ids = refs.filter((r): r is string => r !== undefined && r !== "");
+      const cleared = runtime.onSessionReset(ids);
+      process.stdout.write(
+        `${JSON.stringify({ severity: "INFO", component: "a3-session", event: "session_reset", reason, private_cleared: cleared, ts: new Date().toISOString() })}\n`,
+      );
+    };
+    api.on("before_reset", (event, ctx) => {
+      resetSession([ctx.sessionId, ctx.sessionKey], event.reason ?? "reset");
+    });
+    api.on("session_end", (event) => {
+      if (event.reason !== "new" && event.reason !== "reset") return;
+      resetSession([event.sessionId, event.sessionKey, event.nextSessionId], event.reason);
+    });
+
     api.on("agent_end", (event, ctx) => {
       runtime.onAgentEnd(runKeyOf(ctx, event.runId), event);
     });

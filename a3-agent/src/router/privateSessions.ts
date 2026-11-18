@@ -11,6 +11,8 @@ import { dirname } from "node:path";
 export interface PrivateSessionStore {
   has(sessionRef: string): boolean;
   add(sessionRef: string): void;
+  /** Forget a session (the user started a new conversation with /new or /reset). */
+  delete(sessionRef: string): void;
 }
 
 const MAX_SESSIONS = 2_000;
@@ -24,6 +26,10 @@ export class InMemoryPrivateSessionStore implements PrivateSessionStore {
 
   add(sessionRef: string): void {
     this.#refs.add(sessionRef);
+  }
+
+  delete(sessionRef: string): void {
+    this.#refs.delete(sessionRef);
   }
 }
 
@@ -80,6 +86,15 @@ export class FilePrivateSessionStore implements PrivateSessionStore {
       if (oldest === undefined) break;
       this.#refs.delete(oldest);
     }
+    this.#persist();
+  }
+
+  delete(sessionRef: string): void {
+    if (!this.#refs.delete(sessionRef)) return;
+    this.#persist();
+  }
+
+  #persist(): void {
     if (this.#failClosed) return; // never overwrite a file we could not read
     try {
       mkdirSync(dirname(this.#file), { recursive: true });

@@ -58,6 +58,11 @@ declare module "openclaw/plugin-sdk/plugin-entry" {
       },
       ctx: AgentHookContext,
     ) => void;
+    before_reset: (event: { reason?: string }, ctx: AgentHookContext) => void;
+    session_end: (
+      event: { sessionId: string; sessionKey?: string; reason?: string; nextSessionId?: string },
+      ctx: { sessionId: string; sessionKey?: string },
+    ) => void;
     agent_end: (
       event: { runId?: string; success: boolean; error?: string; durationMs?: number },
       ctx: AgentHookContext,

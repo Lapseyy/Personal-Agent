@@ -293,6 +293,22 @@ export class RouterRuntime {
    * to report success AND the last provider call to have completed; a 200 that produced no
    * completed call is not success.
    */
+  /**
+   * The user started a new conversation (/new or /reset). OpenClaw keeps the same session id
+   * across a reset (seen live: one id stayed private through four /new commands), so the
+   * private flag and the tool follow-up window are cleared explicitly here. Returns how many
+   * of the given refs were private, for the log.
+   */
+  onSessionReset(refs: readonly string[]): number {
+    let cleared = 0;
+    for (const ref of new Set(refs)) {
+      if (this.#deps.privateSessions.has(ref)) cleared++;
+      this.#deps.privateSessions.delete(ref);
+      this.#toolSessions.delete(ref);
+    }
+    return cleared;
+  }
+
   onAgentEnd(
     runKey: string,
     end: { success: boolean; durationMs?: number | undefined; error?: string | undefined },

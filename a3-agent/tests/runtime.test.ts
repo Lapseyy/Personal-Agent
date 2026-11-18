@@ -220,6 +220,19 @@ describe("RouterRuntime: private sessions and failure logging", () => {
     });
   });
 
+  // Regression (live, Nov 17): the same session id stayed private through four /new commands,
+  // so a fresh conversation sent its reasoning and tool turns to local Gemma.
+  it("/new or /reset clears the private flag for that session", async () => {
+    await h.runtime.onModelResolve("r1", PRIVATE, 0, "sess-A");
+    h.runtime.onModelCallEnded("r1", { provider: "ollama", outcome: "completed" });
+    h.runtime.onAgentEnd("r1", { success: true });
+    expect(h.runtime.onSessionReset(["sess-A", "agent:main:main"])).toBe(1);
+    expect((await h.runtime.onModelResolve("r2", HARD, 0, "sess-A")).providerOverride).toBe(
+      "openai",
+    );
+    expect(h.runtime.onSessionReset(["sess-A"])).toBe(0);
+  });
+
   it('a short "yes" after a tool-using turn stays on the cloud; it expires after 15 minutes', async () => {
     await h.runtime.onModelResolve("r1", "Send an email to sam@example.com", 0, "sess-T");
     expect((await h.runtime.onModelResolve("r2", "Yes", 0, "sess-T")).providerOverride).toBe(

@@ -56,8 +56,10 @@ a time is not enough: a private exchange answered locally would reach the cloud 
 on the next cloud-routed turn. The router therefore marks a session private on its first
 privacy-sensitive turn and keeps every later turn in that session on local Gemma
 (`rule=private_session_local`), or holds it when Gemma is offline
-(`rule=private_session_held`). Send `/new` to start a fresh session; the private one is not
-carried over. The list of private sessions lives in the OpenClaw state directory
+(`rule=private_session_held`). Send `/new` (or `/reset`) to start a fresh session. OpenClaw
+keeps the same session id across a reset, so the plugin clears the private flag itself on the
+`before_reset` / `session_end` (reason `new` or `reset`) hooks and logs a `session_reset` line
+(component `a3-session`, no message text). The list of private sessions lives in the OpenClaw state directory
 (`a3-router/private-sessions.json`), so it is snapshotted and restored together with the
 transcripts, and an unreadable list is treated as "every session is private" (fail closed).
 

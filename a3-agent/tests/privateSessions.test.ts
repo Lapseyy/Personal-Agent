@@ -46,6 +46,16 @@ describe("FilePrivateSessionStore", () => {
     expect(JSON.parse(readFileSync(path, "utf8"))).toEqual(["s1"]);
   });
 
+  it("delete removes a session and persists the removal", () => {
+    const path = file();
+    const store = new FilePrivateSessionStore(path);
+    store.add("s1");
+    store.add("s2");
+    store.delete("s1");
+    expect(JSON.parse(readFileSync(path, "utf8"))).toEqual(["s2"]);
+    expect(new FilePrivateSessionStore(path).has("s1")).toBe(false);
+  });
+
   it("survives a restart: a second instance reads what the first wrote", () => {
     const path = file();
     new FilePrivateSessionStore(path).add("s1");
